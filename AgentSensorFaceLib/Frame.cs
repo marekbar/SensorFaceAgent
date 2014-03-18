@@ -8,12 +8,12 @@ namespace AgentSensorFaceLib
 {
     public class Frame : EventArgs
     {
-        public Bitmap Frame;
-        public int Width { get { return Frame.Width; } }
-        public int Height { get { return Frame.Height; } }
+        public Bitmap Image;
+        public int Width { get { return Image.Width; } }
+        public int Height { get { return Image.Height; } }
         public Frame(Bitmap bmp)
         {
-            Frame = bmp;
+            Image = bmp;
         }
     }
 }
