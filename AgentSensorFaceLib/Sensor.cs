@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
+using Accord.Vision.Detection;
 using AForge.Imaging;
 using AForge.Video;
 using AForge.Video.DirectShow;
@@ -16,15 +18,15 @@ namespace AgentSensorFaceLib
         #region EVENTS
 
         #region FACE_DETECTED
-        public delegate void FaceDetected(object sender, Face args);
+        public delegate void FaceDetected(object sender, Face[] args);
 
         public event FaceDetected OnFaceDetected;
 
-        private void updateFaceDetected(Rectangle rect)
+        private void updateFaceDetected(Rectangle[] rects)
         {
             if (OnFaceDetected != null)
-            {
-                OnFaceDetected(this, new Face(rect));
+            {               
+                OnFaceDetected(this, rects.ToFaces());
             }
         }
         #endregion
@@ -79,8 +81,18 @@ namespace AgentSensorFaceLib
         private String cameraLogin;
         private String cameraPassword;
         private MotionDetector motion;
-
-
+        private MotionAreaHighlighting motionMarker;
+        private Accord.Vision.Detection.HaarObjectDetector detector = null;
+        private Accord.Vision.Tracking.Camshift tracker = null;
+        private Accord.Imaging.Filters.RectanglesMarker marker = new Accord.Imaging.Filters.RectanglesMarker(Color.Fuchsia);
+        private bool detecting = false;
+        private bool tracking = false;
+        private float scaleX;
+        private float scaleY;
+        private static int processWidth = 160;
+        private static int processHeight = 120;
+        private Rectangle previous;
+        private Rectangle current;
         #endregion
 
         #region CONSTRUCTORS
@@ -150,10 +162,19 @@ namespace AgentSensorFaceLib
                 video.NewFrame += new NewFrameEventHandler(processFrame);
                 video.VideoSourceError += new VideoSourceErrorEventHandler(processFrameError);
 
+                motionMarker = new MotionAreaHighlighting();
+                
                 motion = new MotionDetector(
                     new SimpleBackgroundModelingDetector( ),
-                    new MotionAreaHighlighting( ) 
+                    motionMarker
                 );
+
+               detector = new HaarObjectDetector(
+               HaarCascade.FromXml(new StringReader(Properties.Resources.haarcascade_frontalface_default)));
+               detector.MinSize = new Size(10, 10);
+               detector.ScalingFactor = 1.2f;
+               detector.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
+               detector.SearchMode = ObjectDetectorSearchMode.Single;  
 
             }
             catch (Exception ex)
@@ -170,21 +191,55 @@ namespace AgentSensorFaceLib
         private void processFrame(object sender, NewFrameEventArgs eventArgs)
         {
             Rectangle rect = new Rectangle(0, 0, eventArgs.Frame.Width, eventArgs.Frame.Height);
-            Bitmap frame = eventArgs.Frame.Clone(rect, eventArgs.Frame.PixelFormat);
-            BitmapData data = frame.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite, frame.PixelFormat);
-            UnmanagedImage ui = new UnmanagedImage(data);
+            PixelFormat pf = eventArgs.Frame.PixelFormat;
+            System.Drawing.Imaging.ImageLockMode access = ImageLockMode.ReadWrite;
 
-            if (OnMotionDetected != null && motion.ProcessFrame(ui) > 0.15)
+            Bitmap frame = eventArgs.Frame.Clone(rect, pf);
+            scaleX = frame.Width / processWidth;
+            scaleY = frame.Height / processHeight;
+            Bitmap frameFace = eventArgs.Frame.Clone(rect, pf);
+
+            
+
+            if (OnMotionDetected != null)
             {
-                updateMotion(true);                
+                BitmapData dataMotion = frame.LockBits(rect, access, pf);
+                UnmanagedImage frameUI = new UnmanagedImage(dataMotion);
+                if (motion.ProcessFrame(frameUI) > 0.15)
+                {
+                    updateMotion(true);
+                }
+                else
+                {
+                    updateMotion(false);
+                }
+                frame.UnlockBits(dataMotion);
             }
-            else
+
+            if (OnFaceDetected != null)
             {
-                updateMotion(false);
+                BitmapData dataFace = frameFace.LockBits(rect, access, pf);
+                var faceUI = new UnmanagedImage(dataFace);
+                var downsample = faceUI.ResizeTo(processWidth, processHeight);
+                var detections = detector.ProcessFrame(downsample);
+                frameFace.UnlockBits(dataFace);
+
+                if (detections.Length > 0)
+                {
+                    updateFaceDetected(detector.DetectedObjects);
+
+                    BitmapData dataMain = frame.LockBits(rect, access, pf);
+                    var ui = new UnmanagedImage(dataMain);
+                    marker = new Accord.Imaging.Filters.RectanglesMarker(detector.DetectedObjects.Scale(scaleX, scaleY));
+                    marker.MarkerColor = Color.Yellow;                    
+                    frame.UnlockBits(dataMain);
+
+                    frame = marker.Apply(frame);
+                    
+                }                
             }
 
-            frame.UnlockBits(data);
-
+            
             updateFrameReceived(frame);
             
 

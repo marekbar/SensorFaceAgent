@@ -49,8 +49,12 @@ namespace AgentSensorFace
             }
         }
 
-        private void FaceDetectSense(object sender, Face face)
+        private void FaceDetectSense(object sender, Face[] faces)
         {
+            if(faces.Length > 0) 
+                SetText("Wykryto: " + faces.Length.ToString() + " twarzy", 2);
+            else
+                SetText("Brak twarzy",2);
         }
 
         private void DisruptionSense(object sender, SensorError error)
@@ -58,18 +62,47 @@ namespace AgentSensorFace
             SetText(error.ErrorMessage);
         }
 
-        private void SetText(string text)
+        private void SetText(string text, int id = 1)
         {
             try
             {
-                if (this.status.GetCurrentParent().InvokeRequired)
+                switch (id)
                 {
-                    this.status.GetCurrentParent().Invoke(new MethodInvoker(delegate { status.Text = text; }));
-                }
-                else
-                {
-                    status.Text = text;
-                }
+                    case 1:
+                        {
+                            if (this.status1.GetCurrentParent().InvokeRequired)
+                            {
+                                this.status1.GetCurrentParent().Invoke(new MethodInvoker(delegate { status1.Text = text; }));
+                            }
+                            else
+                            {
+                                status1.Text = text;
+                            }
+                        }break;
+                    case 2:
+                        {
+                            if (this.status2.GetCurrentParent().InvokeRequired)
+                            {
+                                this.status2.GetCurrentParent().Invoke(new MethodInvoker(delegate { status2.Text = text; }));
+                            }
+                            else
+                            {
+                                status2.Text = text;
+                            }
+                        } break;
+                    case 3:
+                        {
+                            if (this.status3.GetCurrentParent().InvokeRequired)
+                            {
+                                this.status3.GetCurrentParent().Invoke(new MethodInvoker(delegate { status3.Text = text; }));
+                            }
+                            else
+                            {
+                                status3.Text = text;
+                            }
+                        } break;
+
+                }                
             }
             catch { }
         }

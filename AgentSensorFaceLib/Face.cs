@@ -8,15 +8,32 @@ namespace AgentSensorFaceLib
 {
     public class Face : EventArgs
     {
-        public int X;
-        public int Y;
+        public int PositionX
+        {
+            get
+            {
+                return Left + Width / 2;
+            }
+        }
+
+        public int PositionY
+        {
+            get
+            {
+                return Top + Height / 2;
+            }
+        }
+
+        public int Left;
+        public int Top;
         public int Width;
         public int Height;
+        public int ScaleFactor = 1;
         public Face() { }
         public Face(Rectangle rect)
         {
-            X = rect.X;
-            Y = rect.Y;
+            Left = rect.X;
+            Top = rect.Y;
             Width = rect.Width;
             Height = rect.Height;
         }

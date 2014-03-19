@@ -34,7 +34,9 @@
             this.agentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status3 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
             this.menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -78,18 +80,30 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.status});
+            this.status1,
+            this.status2,
+            this.status3});
             this.statusStrip1.Location = new System.Drawing.Point(0, 480);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(501, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // status
+            // status1
             // 
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(39, 17);
-            this.status.Text = "Agent";
+            this.status1.Name = "status1";
+            this.status1.Size = new System.Drawing.Size(39, 17);
+            this.status1.Text = "Agent";
+            // 
+            // status2
+            // 
+            this.status2.Name = "status2";
+            this.status2.Size = new System.Drawing.Size(0, 17);
+            // 
+            // status3
+            // 
+            this.status3.Name = "status3";
+            this.status3.Size = new System.Drawing.Size(0, 17);
             // 
             // Form1
             // 
@@ -122,7 +136,9 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem agentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zamknijToolStripMenuItem;
-        private System.Windows.Forms.ToolStripStatusLabel status;
+        private System.Windows.Forms.ToolStripStatusLabel status1;
+        private System.Windows.Forms.ToolStripStatusLabel status2;
+        private System.Windows.Forms.ToolStripStatusLabel status3;
     }
 }
 
