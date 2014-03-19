@@ -27,6 +27,7 @@ namespace AgentSensorFace
             sensor.OnFrameReceived += new Sensor.FrameReceived(ViewSense);
             sensor.OnFaceDetected += new Sensor.FaceDetected(FaceDetectSense);
             sensor.OnSensorError += new Sensor.ErrorOccured(DisruptionSense);
+            sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
             sensor.WakeUp();
         }
 
@@ -34,6 +35,18 @@ namespace AgentSensorFace
         private void ViewSense(object sender, Frame frame)
         {
             setImage((Bitmap)frame.Image.Clone());
+        }
+
+        private void MotionSense(object sender, bool isMotion)
+        {
+            if (isMotion)
+            {
+                SetText("Ruch");
+            }
+            else
+            {
+                SetText("Brak ruchu");
+            }
         }
 
         private void FaceDetectSense(object sender, Face face)

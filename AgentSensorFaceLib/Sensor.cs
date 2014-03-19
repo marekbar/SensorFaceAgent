@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
+using AForge.Imaging;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using AForge.Vision.Motion;
 
 namespace AgentSensorFaceLib
 {
@@ -54,6 +57,17 @@ namespace AgentSensorFaceLib
         }
         #endregion
 
+        #region MOTION
+        public delegate void MotionDetected(object sender, bool IsMotion);
+        public event MotionDetected OnMotionDetected;
+        private void updateMotion(bool isMotion)
+        {
+            if(OnMotionDetected != null)
+            {
+                OnMotionDetected(this, isMotion);
+            }
+        }
+        #endregion
         #endregion
 
         #region FIELDS_AND_PROPS
@@ -64,6 +78,9 @@ namespace AgentSensorFaceLib
         private String cameraUrl;
         private String cameraLogin;
         private String cameraPassword;
+        private MotionDetector motion;
+
+
         #endregion
 
         #region CONSTRUCTORS
@@ -132,6 +149,12 @@ namespace AgentSensorFaceLib
                 }
                 video.NewFrame += new NewFrameEventHandler(processFrame);
                 video.VideoSourceError += new VideoSourceErrorEventHandler(processFrameError);
+
+                motion = new MotionDetector(
+                    new SimpleBackgroundModelingDetector( ),
+                    new MotionAreaHighlighting( ) 
+                );
+
             }
             catch (Exception ex)
             {
@@ -146,8 +169,25 @@ namespace AgentSensorFaceLib
 
         private void processFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            updateFrameReceived(eventArgs.Frame);
-            //here - processing TO DO
+            Rectangle rect = new Rectangle(0, 0, eventArgs.Frame.Width, eventArgs.Frame.Height);
+            Bitmap frame = eventArgs.Frame.Clone(rect, eventArgs.Frame.PixelFormat);
+            BitmapData data = frame.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite, frame.PixelFormat);
+            UnmanagedImage ui = new UnmanagedImage(data);
+
+            if (OnMotionDetected != null && motion.ProcessFrame(ui) > 0.15)
+            {
+                updateMotion(true);                
+            }
+            else
+            {
+                updateMotion(false);
+            }
+
+            frame.UnlockBits(data);
+
+            updateFrameReceived(frame);
+            
+
         }
         #endregion
     }
