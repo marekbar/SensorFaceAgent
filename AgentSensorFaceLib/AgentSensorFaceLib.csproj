@@ -140,6 +140,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detector.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Eye.cs" />
     <Compile Include="Face.cs" />

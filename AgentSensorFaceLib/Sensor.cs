@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using Accord.Vision.Detection;
+using Accord.Vision.Detection.Cascades;
 using AForge.Imaging;
 using AForge.Video;
 using AForge.Video.DirectShow;
@@ -365,22 +366,12 @@ namespace AgentSensorFaceLib
                     new SimpleBackgroundModelingDetector( ),
                     motionMarker
                 );
+                
+                //works
+                detectorFace = Detector.Create(DetectorType.Face);
 
-               detectorFace = new HaarObjectDetector(
-               HaarCascade.FromXml(new StringReader(Properties.Resources.haarcascade_frontalface_default)));
-               detectorFace.MinSize = new Size(10, 10);
-               detectorFace.ScalingFactor = 1.2f;
-               detectorFace.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
-               detectorFace.SearchMode = ObjectDetectorSearchMode.Single;
-               detectorFace.UseParallelProcessing = true;
-
-               detectorEye = new HaarObjectDetector(
-                   HaarCascade.FromXml(new StringReader(Properties.Resources.haarcascade_eye)));
-               detectorEye.MinSize = new Size(10, 10);
-               detectorEye.ScalingFactor = 1.1f;
-               detectorEye.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
-               detectorEye.SearchMode = ObjectDetectorSearchMode.Default;                
-               detectorEye.UseParallelProcessing = true;
+                //crap
+                detectorEye = Detector.Create(DetectorType.Eye);
             }
             catch (Exception ex)
             {
