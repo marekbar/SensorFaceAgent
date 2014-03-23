@@ -199,7 +199,12 @@ namespace AgentSensorFaceLib
         /// <summary>
         /// Face detector
         /// </summary>
-        private Accord.Vision.Detection.HaarObjectDetector detector = null;
+        private Accord.Vision.Detection.HaarObjectDetector detectorFace = null;
+
+        /// <summary>
+        /// Eye detector
+        /// </summary>
+        private Accord.Vision.Detection.HaarObjectDetector detectorEye = null;
 
         /// <summary>
         /// Object tracker - needs startup coordinates
@@ -250,6 +255,14 @@ namespace AgentSensorFaceLib
         /// Current rectangle area
         /// </summary>
         private Rectangle current;
+
+        private bool isPreview
+        {
+            get
+            {
+                return OnFrameReceived != null;
+            }
+        }
         #endregion
 
         #region CONSTRUCTORS
@@ -353,13 +366,21 @@ namespace AgentSensorFaceLib
                     motionMarker
                 );
 
-               detector = new HaarObjectDetector(
+               detectorFace = new HaarObjectDetector(
                HaarCascade.FromXml(new StringReader(Properties.Resources.haarcascade_frontalface_default)));
-               detector.MinSize = new Size(10, 10);
-               detector.ScalingFactor = 1.2f;
-               detector.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
-               detector.SearchMode = ObjectDetectorSearchMode.Single;  
+               detectorFace.MinSize = new Size(10, 10);
+               detectorFace.ScalingFactor = 1.2f;
+               detectorFace.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
+               detectorFace.SearchMode = ObjectDetectorSearchMode.Single;
+               detectorFace.UseParallelProcessing = true;
 
+               detectorEye = new HaarObjectDetector(
+                   HaarCascade.FromXml(new StringReader(Properties.Resources.haarcascade_eye)));
+               detectorEye.MinSize = new Size(10, 10);
+               detectorEye.ScalingFactor = 1.1f;
+               detectorEye.ScalingMode = ObjectDetectorScalingMode.SmallerToGreater;
+               detectorEye.SearchMode = ObjectDetectorSearchMode.Default;                
+               detectorEye.UseParallelProcessing = true;
             }
             catch (Exception ex)
             {
@@ -412,25 +433,38 @@ namespace AgentSensorFaceLib
                 var dataFace = frameFace.GetDirectAccess();
                 var faceUI = dataFace.GetUnmanaged();
                 var downsample = faceUI.ResizeTo(processWidth, processHeight);
-                var detections = detector.ProcessFrame(downsample);
-                frameFace.UnlockBits(dataFace);
+                var detections = detectorFace.ProcessFrame(downsample);
+                
 
                 if (detections.Length > 0)
                 {
-                    updateFaceDetected(detector.DetectedObjects);
+                    updateFaceDetected(detectorFace.DetectedObjects);
 
-                    var dataMain = frame.GetDirectAccess();
-                    var ui = dataMain.GetUnmanaged();
-                    marker = new Accord.Imaging.Filters.RectanglesMarker(detector.DetectedObjects.Scale(scaleX, scaleY));
-                    marker.MarkerColor = Color.Yellow;
-                    frame.UnlockBits(dataMain);
+                    if (isPreview)
+                    {
+                        marker = new Accord.Imaging.Filters.RectanglesMarker(detectorFace.DetectedObjects.Scale(scaleX, scaleY));
+                        marker.MarkerColor = Color.Yellow;
+                        frame = marker.Apply(frame);
+                    }
 
-                    frame = marker.Apply(frame);
+                    detectorEye.ProcessFrame(downsample);
+                    
+                    if (detectorEye.DetectedObjects.Length > 0)
+                    {
+                        if (isPreview)
+                        {
+                            marker = new Accord.Imaging.Filters.RectanglesMarker(detectorFace.DetectedObjects.Scale(scaleX, scaleY));
+                            marker.MarkerColor = Color.Orange;
+                            frame = marker.Apply(frame);
+                        }
+                    }
+                    
                 }
                 else
                 {
-                    updateFaceDetected(detector.DetectedObjects);
+                    updateFaceDetected(detectorFace.DetectedObjects);
                 }
+                frameFace.UnlockBits(dataFace);
             }
 
             

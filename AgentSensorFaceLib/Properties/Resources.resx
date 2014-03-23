@@ -118,7 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="haarcascade_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_eye.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_eye_tree_eyeglasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_eye_tree_eyeglasses.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_frontalface_alt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_frontalface_alt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_frontalface_alt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_frontalface_alt2.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_frontalface_alt_tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_frontalface_alt_tree.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
   <data name="haarcascade_frontalface_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\haarcascade_frontalface_default.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_fullbody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_fullbody.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_lefteye_2splits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_lefteye_2splits.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_lowerbody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_lowerbody.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_eyepair_big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_eyepair_big.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_eyepair_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_eyepair_small.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_leftear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_leftear.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_lefteye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_lefteye.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_mouth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_mouth.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_nose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_nose.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_rightear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_rightear.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_righteye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_righteye.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_mcs_upperbody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_mcs_upperbody.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_profileface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_profileface.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_righteye_2splits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_righteye_2splits.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_smile.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
+  </data>
+  <data name="haarcascade_upperbody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haarcascade_upperbody.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1250</value>
   </data>
 </root>

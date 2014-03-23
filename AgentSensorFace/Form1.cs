@@ -27,7 +27,8 @@ namespace AgentSensorFace
             sensor.OnFrameReceived += new Sensor.FrameReceived(ViewSense);
             sensor.OnFaceDetected += new Sensor.FaceDetected(FaceDetectSense);
             sensor.OnSensorError += new Sensor.ErrorOccured(DisruptionSense);
-            sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
+            sensor.OnEyesDetected += new Sensor.EyesDetected(EyeDetectSense);
+           // sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
             sensor.WakeUp();
         }
 
@@ -55,6 +56,14 @@ namespace AgentSensorFace
                 SetText("Wykryto: " + faces.Length.ToString() + " twarzy", 2);
             else
                 SetText("Brak twarzy",2);
+        }
+
+        private void EyeDetectSense(object sender, Eye[] eyes)
+        {
+            if (eyes.Length > 0)
+                SetText("Wykryto: " + eyes.Length.ToString() + " oczu", 2);
+            else
+                SetText("Brak wykryć oczu", 2);
         }
 
         private void DisruptionSense(object sender, SensorError error)

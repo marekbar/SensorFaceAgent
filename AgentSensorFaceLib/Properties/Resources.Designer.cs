@@ -63,6 +63,121 @@ namespace AgentSensorFaceLib.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
         ///&lt;!--
+        ///    Stump-based 20x20 frontal eye detector.
+        ///    Created by Shameem Hameed (http://umich.edu/~shameem)
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or use the software.
+        ///
+        ///
+        ///                        Intel License Agr [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_eye {
+            get {
+                return ResourceManager.GetString("haarcascade_eye", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Tree-based 20x20 frontal eye detector with better handling of eyeglasses.
+        ///    Created by Shameem Hameed (http://umich.edu/~shameem)
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or use the software.
+        ///
+        ///
+        ///        [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_eye_tree_eyeglasses {
+            get {
+                return ResourceManager.GetString("haarcascade_eye_tree_eyeglasses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Stump-based 20x20 gentle adaboost frontal face detector.
+        ///    Created by Rainer Lienhart.
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or use the software.
+        ///
+        ///
+        ///                        Intel License Agreement
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_frontalface_alt {
+            get {
+                return ResourceManager.GetString("haarcascade_frontalface_alt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Stump-based 20x20 gentle adaboost frontal face detector.
+        ///    This detector uses tree of stage classifiers instead of a cascade
+        ///    Created by Rainer Lienhart.
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_frontalface_alt_tree {
+            get {
+                return ResourceManager.GetString("haarcascade_frontalface_alt_tree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Tree-based 20x20 gentle adaboost frontal face detector.
+        ///    Created by Rainer Lienhart.
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or use the software.
+        ///
+        ///
+        ///                        Intel License Agreement
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_frontalface_alt2 {
+            get {
+                return ResourceManager.GetString("haarcascade_frontalface_alt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
         ///    Stump-based 24x24 discrete(?) adaboost frontal face detector.
         ///    Created by Rainer Lienhart.
         ///
@@ -80,6 +195,338 @@ namespace AgentSensorFaceLib.Properties {
         internal static string haarcascade_frontalface_default {
             get {
                 return ResourceManager.GetString("haarcascade_frontalface_default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///   14x28 fullbody detector (see the detailed description below). 
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2004, Hannes Kruppa and Bernt Sch [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_fullbody {
+            get {
+                return ResourceManager.GetString("haarcascade_fullbody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Tree-based 20x20 left eye detector.
+        ///    The detector is trained by 6665 positive samples from FERET, VALID and BioID face databases. 
+        ///    Created by Shiqi Yu (http://yushiqi.cn/research/eyedetection).
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this lic [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_lefteye_2splits {
+            get {
+                return ResourceManager.GetString("haarcascade_lefteye_2splits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///   19x23 lowerbody detector (see the detailed description below). 
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2004, Hannes Kruppa and Bernt Sc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_lowerbody {
+            get {
+                return ResourceManager.GetString("haarcascade_lowerbody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  45x11 Eye pair detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castrillon-Santana (IUS [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_eyepair_big {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_eyepair_big", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  22x5 Eye pair detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castrillon-Santana (IUSI [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_eyepair_small {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_eyepair_small", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!----------------------------------------------------------------------------
+        ///  12x20 Left ear (in the image) detector computed with 5000 positive and 15000
+        ///  negative samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, d [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_leftear {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_leftear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  18x12 Left eye (in the image) detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castrill [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_lefteye {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_lefteye", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  25x15 Mouth detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castrillon-Santana (IUSIAN [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_mouth {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_mouth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  18x15 Nose detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2008, Modesto Castrillon-Santana (IUSIANI [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_nose {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_nose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!----------------------------------------------------------------------------
+        ///  12x20 Right ear (in the image) detector computed with 5000 positive and 15000
+        ///  negative samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license,  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_rightear {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_rightear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  18x12 Right eye (in the image) detector computed with 7000 positive samples
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castril [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_righteye {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_righteye", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///  22x20 Head and shoulders detector 
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2006, Modesto Castrillon-Santana (IUSIANI, University of
+        ///| Las [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_mcs_upperbody {
+            get {
+                return ResourceManager.GetString("haarcascade_mcs_upperbody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    20x20 profile face detector.
+        ///    Contributed by David Bradley from Princeton University.
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this license, do not download, install,
+        ///  copy or use the software.
+        ///
+        ///
+        ///                        Intel License Agreement
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_profileface {
+            get {
+                return ResourceManager.GetString("haarcascade_profileface", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///    Tree-based 20x20 right eye detector.
+        ///    The detector is trained by 6665 positive samples from FERET, VALID and BioID face databases. 
+        ///    Created by Shiqi Yu (http://yushiqi.cn/research/eyedetection).
+        ///
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        ///  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///
+        ///  By downloading, copying, installing or using the software you agree to this license.
+        ///  If you do not agree to this li [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_righteye_2splits {
+            get {
+                return ResourceManager.GetString("haarcascade_righteye_2splits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!----------------------------------------------------------------------------
+        ///  Smile detector
+        ///  Contributed by Oscar Deniz Suarez
+        ///  More information can be found at http://visilab.etsii.uclm.es/personas/oscar/oscar.html
+        ///  
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_smile {
+            get {
+                return ResourceManager.GetString("haarcascade_smile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;!--
+        ///   22x18 upperbody detector (see the detailed description below). 
+        ///
+        /////////////////////////////////////////////////////////////////////////////
+        ///| Contributors License Agreement
+        ///| IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+        ///|   By downloading, copying, installing or using the software you agree 
+        ///|   to this license.
+        ///|   If you do not agree to this license, do not download, install,
+        ///|   copy or use the software.
+        ///|
+        ///| Copyright (c) 2004, Hannes Kruppa and Bernt Sc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string haarcascade_upperbody {
+            get {
+                return ResourceManager.GetString("haarcascade_upperbody", resourceCulture);
             }
         }
     }
