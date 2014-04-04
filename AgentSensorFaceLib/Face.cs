@@ -48,7 +48,12 @@ namespace AgentSensorFaceLib
         /// Face Rectangle height
         /// </summary>
         public int Height;
-        
+
+        /// <summary>
+        /// Face image as Bitmap
+        /// </summary>
+        public Bitmap FaceImage = null;
+
         /// <summary>
         /// Face default constructor
         /// </summary>
@@ -64,6 +69,20 @@ namespace AgentSensorFaceLib
             Top = rect.Y;
             Width = rect.Width;
             Height = rect.Height;
+        }
+
+        public bool Save(System.Environment.SpecialFolder where, System.String name = "")
+        {
+            try
+            {
+                var path = System.Environment.GetFolderPath(where) + "\\" + (name == "" ? System.DateTime.Now.ToString().Replace('-','_').Replace(':','_').Replace(' ','_') : name) + ".bmp";
+                FaceImage.Save(path);
+                return true;
+            }
+            catch(System.Exception)
+            {
+                return false;
+            }
         }
     }
 }

@@ -52,10 +52,17 @@ namespace AgentSensorFace
 
         private void FaceDetectSense(object sender, Face[] faces)
         {
-            if(faces.Length > 0) 
+            if (faces.Length > 0)
+            {
                 SetText("Wykryto: " + faces.Length.ToString() + " twarzy", 2);
+                //how to use face image - this is real size, no scale needed
+                foreach (var face in faces)
+                {
+                    face.Save(Environment.SpecialFolder.DesktopDirectory);
+                }
+            }
             else
-                SetText("Brak twarzy",2);
+                SetText("Brak twarzy", 2);
         }
 
         private void EyeDetectSense(object sender, Eye[] eyes)

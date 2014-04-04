@@ -34,12 +34,12 @@ namespace AgentSensorFaceLib
         /// <summary>
         /// Raises event for face detected
         /// </summary>
-        /// <param name="rects">Rectangle[] - detected faces</param>
-        private void updateFaceDetected(Rectangle[] rects)
+        /// <param name="rects">Face[] - detected faces</param>
+        private void updateFaceDetected(Face[] faces)
         {
             if (OnFaceDetected != null)
             {               
-                OnFaceDetected(this, rects.ToFaces());
+                OnFaceDetected(this, faces);
             }
         }
         #endregion
@@ -428,9 +428,7 @@ namespace AgentSensorFaceLib
                 
 
                 if (detections.Length > 0)
-                {
-                    updateFaceDetected(detectorFace.DetectedObjects);
-
+                {                   
                     if (isPreview)
                     {
                         marker = new Accord.Imaging.Filters.RectanglesMarker(detectorFace.DetectedObjects.Scale(scaleX, scaleY));
@@ -451,11 +449,25 @@ namespace AgentSensorFaceLib
                     }
                     
                 }
-                else
-                {
-                    updateFaceDetected(detectorFace.DetectedObjects);
-                }
+
                 frameFace.UnlockBits(dataFace);
+
+                if (detectorFace.DetectedObjects != null && detectorFace.DetectedObjects.Length > 0)
+                {
+                    var faces = detectorFace.DetectedObjects.ToFaces();
+                    for (int i = 0; i < faces.Length; i++)
+                    {
+                        var cutter = new AForge.Imaging.Filters.Crop(new Rectangle(
+                                                             (int)(faces[i].Left * scaleX),
+                                                             (int)(faces[i].Top * scaleY),
+                                                             (int)(faces[i].Width * scaleX),
+                                                             (int)(faces[i].Height * scaleY)
+                                                             ));
+                        faces[i].FaceImage = cutter.Apply(frameFace);
+                    }
+                    updateFaceDetected(faces);
+                }
+
             }
 
             
