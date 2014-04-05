@@ -68,9 +68,17 @@ namespace AgentSensorFace
         private void EyeDetectSense(object sender, Eye[] eyes)
         {
             if (eyes.Length > 0)
+            {
                 SetText("Wykryto: " + eyes.Length.ToString() + " oczu", 2);
+                foreach (var eye in eyes)
+                {
+                    eye.Save(Environment.SpecialFolder.DesktopDirectory);
+                }
+            }
             else
+            {
                 SetText("Brak wykryć oczu", 2);
+            }
         }
 
         private void DisruptionSense(object sender, SensorError error)
