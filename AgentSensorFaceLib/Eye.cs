@@ -46,6 +46,8 @@ namespace AgentSensorFaceLib
         /// </summary>
         public int Height;
 
+        public Bitmap EyeImage = null;
+
         /// <summary>
         /// Eye default constructor
         /// </summary>
@@ -62,5 +64,28 @@ namespace AgentSensorFaceLib
             Width = rect.Width;
             Height = rect.Height;
         }
+
+        public Rectangle Bounds
+        {
+            get
+            {
+                return new Rectangle(Left, Top, Width, Height);
+            }
+        }
+
+        public bool Save(System.Environment.SpecialFolder where, System.String name = "")
+        {
+            try
+            {
+                var path = System.Environment.GetFolderPath(where) + "\\" + (name == "" ? System.DateTime.Now.ToString().Replace('-', '_').Replace(':', '_').Replace(' ', '_') : name) + "_eye.bmp";
+                EyeImage.Save(path);
+                return true;
+            }
+            catch (System.Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

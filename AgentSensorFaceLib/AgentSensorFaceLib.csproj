@@ -144,6 +144,7 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="Eye.cs" />
     <Compile Include="Face.cs" />
+    <Compile Include="FaceDirection.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

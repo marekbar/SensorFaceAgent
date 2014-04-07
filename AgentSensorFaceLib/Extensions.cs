@@ -86,14 +86,9 @@ namespace AgentSensorFaceLib
         /// </summary>
         /// <param name="rect">Rectangle</param>
         /// <returns>Face</returns>
-        public static Face ToFace(this Rectangle rect)
+        public static Face ToFace(this Rectangle rect, int sx = 1, int sy = 1)
         {
-            var f = new Face();
-            f.Left = rect.X;
-            f.Top = rect.Y;
-            f.Width = rect.Width;
-            f.Height = rect.Height;
-            return f;
+            return new Face(rect, sx, sy);
         }
 
         /// <summary>
@@ -111,17 +106,31 @@ namespace AgentSensorFaceLib
             return e;
         }
 
+        public static Rectangle[] toRects(this Eye[] eyes)
+        {
+            Rectangle[] rects = new Rectangle[eyes.Length];
+            for (int i = 0; i < eyes.Length; i++)
+            {
+                rects[i] = new Rectangle();
+                rects[i].X = eyes[i].Left;
+                rects[i].Y = eyes[i].Top;
+                rects[i].Width = eyes[i].Width;
+                rects[i].Height = eyes[i].Height;
+            }
+            return rects;
+        }
+
         /// <summary>
         /// Convert Rectangle[] to Face[]
         /// </summary>
         /// <param name="rects">Rectangle[]</param>
         /// <returns>Face[]</returns>
-        public static Face[] ToFaces(this Rectangle[] rects)
+        public static Face[] ToFaces(this Rectangle[] rects, int sx = 1, int sy = 1)
         {
             List<Face> faces = new List<Face>();
             foreach (var rect in rects)
             {
-                faces.Add(rect.ToFace());
+                faces.Add(rect.ToFace(sx, sy));
             }
             return faces.ToArray();
         }
@@ -199,9 +208,9 @@ namespace AgentSensorFaceLib
             {
                 Rectangle rr = new Rectangle();
                 rr.X = (int)(r.X * scaleX);
-                rr.Y = (int) (r.Y * scaleY);
-                rr.Width = (int) (r.Width * scaleX);
-                rr.Height = (int) (r.Height * scaleY);
+                rr.Y = (int)(r.Y * scaleY);
+                rr.Width = (int)(r.Width * scaleX);
+                rr.Height = (int)(r.Height * scaleY);
                 rl.Add(rr);
             }
             return rl.ToArray();

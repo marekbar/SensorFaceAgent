@@ -55,6 +55,11 @@ namespace AgentSensorFaceLib
         public Bitmap FaceImage = null;
 
         /// <summary>
+        /// Face direction: frontal, looks left or right, can't determinate
+        /// </summary>
+        public FaceDirection Direction = FaceDirection.NoInfo;
+
+        /// <summary>
         /// Face default constructor
         /// </summary>
         public Face() { }
@@ -63,19 +68,19 @@ namespace AgentSensorFaceLib
         /// Face second constructor
         /// </summary>
         /// <param name="rect">Rectangle - initial rect</param>
-        public Face(Rectangle rect)
+        public Face(Rectangle rect, int sx = 1, int sy = 1)
         {
-            Left = rect.X;
-            Top = rect.Y;
-            Width = rect.Width;
-            Height = rect.Height;
+            Left = rect.X * sx;
+            Top = rect.Y * sy;
+            Width = rect.Width * sx;
+            Height = rect.Height * sy;            
         }
 
         public bool Save(System.Environment.SpecialFolder where, System.String name = "")
         {
             try
             {
-                var path = System.Environment.GetFolderPath(where) + "\\" + (name == "" ? System.DateTime.Now.ToString().Replace('-','_').Replace(':','_').Replace(' ','_') : name) + ".bmp";
+                var path = System.Environment.GetFolderPath(where) + "\\" + (name == "" ? System.DateTime.Now.ToString().Replace('-','_').Replace(':','_').Replace(' ','_') : name) + "_face.bmp";
                 FaceImage.Save(path);
                 return true;
             }
@@ -84,5 +89,16 @@ namespace AgentSensorFaceLib
                 return false;
             }
         }
+
+
+        public Rectangle Bounds
+        {
+            get
+            {
+                return new Rectangle(Left, Top, Width, Height);
+            }
+        }
     }
+
+
 }

@@ -23,11 +23,11 @@ namespace AgentSensorFace
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            sensor = new Sensor();
+            sensor = new Sensor(false);
             sensor.OnFrameReceived += new Sensor.FrameReceived(ViewSense);
             sensor.OnFaceDetected += new Sensor.FaceDetected(FaceDetectSense);
-            sensor.OnSensorError += new Sensor.ErrorOccured(DisruptionSense);
-            sensor.OnEyesDetected += new Sensor.EyesDetected(EyeDetectSense);
+            //sensor.OnSensorError += new Sensor.ErrorOccured(DisruptionSense);
+            //sensor.OnEyesDetected += new Sensor.EyesDetected(EyeDetectSense);
            // sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
             sensor.WakeUp();
         }
@@ -54,11 +54,12 @@ namespace AgentSensorFace
         {
             if (faces.Length > 0)
             {
-                SetText("Wykryto: " + faces.Length.ToString() + " twarzy", 2);
+                string TMP = faces[0].Direction == FaceDirection.Frontal ? "Przód" : (faces[0].Direction == FaceDirection.TurnedLeft ? "Lewo" : (faces[0].Direction == FaceDirection.TurnedRight ? "Prawo" : "Nie wiadomo"));
+                SetText("Wykryto: " + faces.Length.ToString() + " twarzy " + TMP, 2);
                 //how to use face image - this is real size, no scale needed
                 foreach (var face in faces)
                 {
-                    face.Save(Environment.SpecialFolder.DesktopDirectory);
+                    //face.Save(Environment.SpecialFolder.DesktopDirectory);
                 }
             }
             else
@@ -72,7 +73,7 @@ namespace AgentSensorFace
                 SetText("Wykryto: " + eyes.Length.ToString() + " oczu", 2);
                 foreach (var eye in eyes)
                 {
-                    eye.Save(Environment.SpecialFolder.DesktopDirectory);
+                   // eye.Save(Environment.SpecialFolder.DesktopDirectory);
                 }
             }
             else

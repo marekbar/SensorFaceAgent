@@ -38,7 +38,7 @@ namespace AgentSensorFaceLib
         private void updateFaceDetected(Face[] faces)
         {
             if (OnFaceDetected != null)
-            {               
+            {
                 OnFaceDetected(this, faces);
             }
         }
@@ -116,7 +116,7 @@ namespace AgentSensorFaceLib
         /// <param name="isMotion">bool - determinates fact about motion presence</param>
         private void updateMotion(bool isMotion)
         {
-            if(OnMotionDetected != null)
+            if (OnMotionDetected != null)
             {
                 OnMotionDetected(this, isMotion);
             }
@@ -139,12 +139,12 @@ namespace AgentSensorFaceLib
         /// <summary>
         /// Update eyes detection event with new data
         /// </summary>
-        /// <param name="rects">Rectangle[] - eyes set</param>
-        private void updateEyeDetected(Rectangle[] rects)
+        /// <param name="rects">Eye[] - eyes set</param>
+        private void updateEyeDetected(Eye[] eyes)
         {
             if (OnEyesDetected != null)
             {
-                OnEyesDetected(this, rects.ToEyes());
+                OnEyesDetected(this, eyes);
             }
         }
         #endregion
@@ -152,6 +152,7 @@ namespace AgentSensorFaceLib
         #endregion
 
         #region FIELDS_AND_PROPS
+        private bool searchForFaceDirection = false;
         /// <summary>
         /// Defines if sensor uses directly connected camera or camera over IP protocol
         /// </summary>
@@ -208,8 +209,22 @@ namespace AgentSensorFaceLib
         private Accord.Vision.Detection.HaarObjectDetector detectorEye = null;
 
         /// <summary>
-        /// Object tracker - needs startup coordinates
+        /// Nose detector used for determinating if face is seen in frontal
         /// </summary>
+        private Accord.Vision.Detection.HaarObjectDetector detectorNose = null;
+
+        /// <summary>
+        /// Left ear detector used to detect if face is turned in right
+        /// </summary>
+        private Accord.Vision.Detection.HaarObjectDetector detectorEarLeft = null;
+
+        /// <summary>
+        /// Right ear detector used for determinating if face is turned left
+        /// </summary>
+        private Accord.Vision.Detection.HaarObjectDetector detectorEarRight = null;
+
+        private Accord.Vision.Detection.HaarObjectDetector detectorFaceProfile = null;
+
         private Accord.Vision.Tracking.Camshift tracker = null;
 
         /// <summary>
@@ -240,12 +255,12 @@ namespace AgentSensorFaceLib
         /// <summary>
         /// Face process frame width
         /// </summary>
-        private static int processWidth = 160;
+        private static int processWidth = 160;//320;
 
         /// <summary>
         /// Face process frame height
         /// </summary>
-        private static int processHeight = 120;
+        private static int processHeight = 120;//240;
 
         /// <summary>
         /// Previous rectangle area
@@ -270,8 +285,9 @@ namespace AgentSensorFaceLib
         /// <summary>
         /// Default constructor - connects with first local camera
         /// </summary>
-        public Sensor()
+        public Sensor(bool findFaceDirection = true)
         {
+            searchForFaceDirection = findFaceDirection;
             this.localCameraIndex = 0;
             this.isLocalCamera = true;
             this.init();
@@ -327,7 +343,7 @@ namespace AgentSensorFaceLib
         {
             try
             {
-                 video.SignalToStop();
+                video.SignalToStop();
             }
             catch (Exception)
             {
@@ -361,17 +377,18 @@ namespace AgentSensorFaceLib
                 video.VideoSourceError += new VideoSourceErrorEventHandler(processFrameError);
 
                 motionMarker = new MotionAreaHighlighting();
-                
+
                 motion = new MotionDetector(
-                    new SimpleBackgroundModelingDetector( ),
+                    new SimpleBackgroundModelingDetector(),
                     motionMarker
                 );
-                
-                //works
-                detectorFace = Detector.Create(DetectorType.Face);
 
-                //crap
-                detectorEye = Detector.Create(DetectorType.Eye);
+                detectorFace = Detector.Face();
+                detectorEye = Detector.Eye();
+                detectorNose = Detector.Nose();
+                detectorEarLeft = Detector.EarLeft();
+                detectorEarRight = Detector.EarRight();
+                detectorFaceProfile = Detector.FaceProfile();
             }
             catch (Exception ex)
             {
@@ -402,7 +419,7 @@ namespace AgentSensorFaceLib
             Bitmap frame = eventArgs.Frame.Clone(rect, pf);
             scaleX = frame.Width / processWidth;
             scaleY = frame.Height / processHeight;
-            Bitmap frameFace = eventArgs.Frame.Clone(rect, pf);            
+            Bitmap frameFace = eventArgs.Frame.Clone(rect, pf);
 
             if (OnMotionDetected != null)
             {
@@ -424,55 +441,113 @@ namespace AgentSensorFaceLib
                 var dataFace = frameFace.GetDirectAccess();
                 var faceUI = dataFace.GetUnmanaged();
                 var downsample = faceUI.ResizeTo(processWidth, processHeight);
-                var detections = detectorFace.ProcessFrame(downsample);
-                
+                var faceDetections = detectorFace.ProcessFrame(downsample);
+                var faceDetections2 = detectorFaceProfile.ProcessFrame(downsample);
 
-                if (detections.Length > 0)
-                {                   
-                    if (isPreview)
+                if (isPreview)
+                {
+                    if (faceDetections.Length > 0)
                     {
-                        marker = new Accord.Imaging.Filters.RectanglesMarker(detectorFace.DetectedObjects.Scale(scaleX, scaleY));
+                        marker = new Accord.Imaging.Filters.RectanglesMarker(faceDetections.Scale(scaleX, scaleY));
                         marker.MarkerColor = Color.Yellow;
                         frame = marker.Apply(frame);
                     }
-
-                    detectorEye.ProcessFrame(downsample);
                     
-                    if (detectorEye.DetectedObjects.Length > 0)
+                    if (faceDetections2.Length > 0)
                     {
-                        if (isPreview)
-                        {
-                            marker = new Accord.Imaging.Filters.RectanglesMarker(detectorFace.DetectedObjects.Scale(scaleX, scaleY));
-                            marker.MarkerColor = Color.Orange;
-                            frame = marker.Apply(frame);
-                        }
+                        marker = new Accord.Imaging.Filters.RectanglesMarker(faceDetections2.Scale(scaleX, scaleY));
+                        marker.MarkerColor = Color.Yellow;
+                        frame = marker.Apply(frame);
                     }
-                    
                 }
+
 
                 frameFace.UnlockBits(dataFace);
 
                 if (detectorFace.DetectedObjects != null && detectorFace.DetectedObjects.Length > 0)
                 {
-                    var faces = detectorFace.DetectedObjects.ToFaces();
+                    var faces = detectorFace.DetectedObjects.ToFaces((int)scaleX, (int)scaleY);
                     for (int i = 0; i < faces.Length; i++)
                     {
-                        var cutter = new AForge.Imaging.Filters.Crop(new Rectangle(
-                                                             (int)(faces[i].Left * scaleX),
-                                                             (int)(faces[i].Top * scaleY),
-                                                             (int)(faces[i].Width * scaleX),
-                                                             (int)(faces[i].Height * scaleY)
-                                                             ));
+                        var cutter = new AForge.Imaging.Filters.Crop(faces[i].Bounds);
                         faces[i].FaceImage = cutter.Apply(frameFace);
+
+                        if (searchForFaceDirection)
+                        {
+                            detectorNose.ProcessFrame(faces[i].FaceImage);
+                            if (detectorNose.DetectedObjects.Length > 0)
+                            {
+                                faces[i].Direction = FaceDirection.Frontal;
+                            }
+                        }
+
+                        var eyeDetections = detectorEye.ProcessFrame(faces[i].FaceImage);
+
+                        if (eyeDetections.Length > 0)
+                        {
+                            if (eyeDetections.Length >= 1) faces[i].Direction = FaceDirection.Frontal;
+
+                            Eye[] eyes = new Eye[eyeDetections.Length];
+                            for (int ie = 0; ie < eyes.Length; ie++)
+                            {
+                                eyes[ie] = new Eye();
+                                eyes[ie].Left = faces[i].Left + eyeDetections[ie].X;
+                                eyes[ie].Top = faces[i].Top + eyeDetections[ie].Y;
+                                eyes[ie].Width = eyeDetections[ie].Width;
+                                eyes[ie].Height = eyeDetections[ie].Height;
+                                var cutter2 = new AForge.Imaging.Filters.Crop(eyes[ie].Bounds);
+                                eyes[ie].EyeImage = cutter.Apply(frameFace);
+                            }
+
+                            if (isPreview)
+                            {
+                                marker = new Accord.Imaging.Filters.RectanglesMarker(eyes.toRects());
+                                marker.MarkerColor = Color.Orange;
+                                frame = marker.Apply(frame);
+                            }
+
+                            updateEyeDetected(eyes);
+                        }
+                    }
+                    updateFaceDetected(faces);
+                }
+                else if (detectorFaceProfile.DetectedObjects != null && detectorFaceProfile.DetectedObjects.Length > 0)
+                {
+                    var faces = detectorFaceProfile.DetectedObjects.ToFaces((int)scaleX, (int)scaleY);
+                    for (int i = 0; i < faces.Length; i++)
+                    {
+                        var cutter = new AForge.Imaging.Filters.Crop(faces[i].Bounds);
+                        faces[i].FaceImage = cutter.Apply(frameFace);
+
+                        if (searchForFaceDirection)
+                        {
+                            detectorEarLeft.ProcessFrame(faces[i].FaceImage);
+                            if (detectorEarLeft.DetectedObjects.Length > 0)
+                            {
+                                faces[i].Direction = FaceDirection.TurnedRight;
+                            }
+                            else
+                            {
+                                detectorEarRight.ProcessFrame(faces[i].FaceImage);
+                                if (detectorEarRight.DetectedObjects.Length > 0)
+                                {
+                                    faces[i].Direction = FaceDirection.TurnedLeft;
+                                }
+                                else
+                                {
+                                    faces[i].Direction = FaceDirection.NoInfo;
+                                }
+                            }
+                        }
                     }
                     updateFaceDetected(faces);
                 }
 
             }
 
-            
+
             updateFrameReceived(frame);
-            
+
 
         }
         #endregion

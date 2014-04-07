@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!----------------------------------------------------------------------------
+<!--
   12x20 Left ear (in the image) detector computed with 5000 positive and 15000
   negative samples
 
@@ -48,7 +48,7 @@ If you are using any of the detectors or involved ideas please cite this paper:
 @INPROCEEDINGS{Castrillon11-caepia,
   author =       "Castrill\'on Santana, M. and Lorenzo Navarro, J. and Hern\'andez Sosa, D. ",
   title =        "An Study on Ear Detection and its Applications to Face Detection",
-  booktitle =    "Conferencia de la Asociación Española para la Inteligencia Artificial (CAEPIA)",
+  booktitle =    "Conferencia de la AsociaciÃ³n EspaÅ„ola para la Inteligencia Artificial (CAEPIA)",
   year =         "2011",
   month =        "November",
   address =      "La Laguna, Spain",
@@ -60,7 +60,7 @@ More information can be found at http://mozart.dis.ulpgc.es/Gias/modesto.html or
 COMMERCIAL USE:
 If you have any commercial interest in this work please contact 
 mcastrillon@iusiani.ulpgc.es
------------------------------------------------------------------------->
+-->
 
 <opencv_storage>
 <classifier_LeftEarA_trainNew2011_12_20 type_id="opencv-haar-classifier">
