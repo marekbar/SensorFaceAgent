@@ -1,0 +1,1848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="b25359a0-aca8-44bc-a737-9beea2a6ec03" name="Sensor_processFrame" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="839478c1-5088-4249-b5e6-cb0dc100e2e3" name="Sensor_processFrame" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="9dbb1e8a-b018-4ad3-ac7f-1ac1db8ce142" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="1a744cc5-f128-4c7e-bae3-445da0733333" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="9dd24f5a-4bc3-4c54-b487-6c576eddc274" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="5ea02263-a219-4c69-a25d-e5185410bdf8" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ad24d05e-4cbb-49c8-b785-9802249f9112" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="30cca76b-c34e-43fe-9c44-0b17f0a658b4" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6068814f-e11c-45b3-bfc0-982d1535d279" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="8fe626e7-62a2-4c86-9734-25b7dd98ae4a" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="da8794c9-b0aa-49d8-8033-77cd2fb40556" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e8465a16-9cb5-41c8-af10-f5a47c9f5294" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="433def57-40ef-41bf-92a3-86891be63ae7" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a0af66c5-a7a4-469e-a30b-7c2700f56658" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="9745db3a-230e-4c09-b7f5-3caecc5eb801" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="98afd713-3c81-41da-b412-3e273922cbbb" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="4dc10f31-d2d2-430d-9d6e-cc3752b965fe" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="b6fede86-66c1-4684-a347-805711a9af05" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="94b1c626-0dff-43ff-9f64-53c64fb90c58" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="acbd741b-9455-4bcd-97a5-aa331e82e816" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7550b055-2719-4841-83dd-9779d13e75bd" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="cc269cbc-1870-4c07-a8b8-ce35a73cfcd6" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5175d5c7-3543-46b4-87b8-e45ec738ec04" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="dade44eb-8089-4951-9fbe-f24fe6fd71d7" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="937ea81a-6c81-4eae-a4a1-eda8f4d35e2f" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a0959b4b-ceb8-4269-b508-a92a177884ec" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="52fcd8c0-55b3-4fbe-827c-4f3bf83deae4" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="e0c51c1d-1125-4ab0-8b77-0b4903cd5cde" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="69161067-84a3-42ec-9e10-ce2794d10bc1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="2816c752-52fb-4d45-ae0f-46cb6b37615a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="8ce8875e-216c-4704-af4d-0df6f01d325a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e5cee9a3-1d3c-4338-9050-38ceb59894d1" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e6c0da40-2dc4-49d0-b5cd-dcb5a12827ee" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="5f132eca-04a7-4d01-91c2-8c7986a31582" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="ea47a3e3-f273-41fc-8c9e-2bdc8488e826" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="2266b6e5-af8e-43e6-a944-d5329c34d8cc" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="aacff2c5-d2b3-4324-992d-fa1b6eb2d6fa" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="3ea38161-12cc-4d65-a5af-8df0fd85eb4e" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="119cf591-496f-4763-ad2d-946b7df44e74" LastKnownName="MessageOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="fb1ac0d6-24ec-43a6-b881-942c3c92df57" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f4de254e-faf8-48ba-ab1b-d9272171ba6b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="9dd24f5a-4bc3-4c54-b487-6c576eddc274" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ed345737-905c-424e-87e8-61246529e5de" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="8f6f7d80-dc05-42c4-93a1-43ea1184fabd" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="5ea02263-a219-4c69-a25d-e5185410bdf8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="54098ec6-e2d5-4c6f-8253-a19348253862" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="f2014de6-92de-4737-ad49-c899272fabe1" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                  <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="cd6009a9-c836-414e-ad99-973435fab146" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="If">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                      <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="e60cfaf0-af0d-4d21-81ed-dedecfb147ab" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                          <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                        </coveredLifelines>
+                        <fragments>
+                          <combinedFragment Id="bb8aa48e-24c2-4216-bac2-54042a8fb91c" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="a960e28e-a228-486c-bf4a-046158d21e38" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                  <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="a5cb174f-aaf6-4bbc-8dd8-c06b6160449c" guardText="if (OnMotionDetected != null)" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="9ad4b1f9-237b-4cd9-855e-8ae5742384d9" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="c7555192-5471-4361-b4a9-313a6fe37248" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="e852808a-117c-4491-99b7-3d1f7f49352e" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="e638856c-2f1e-4819-987d-1b2992f94210" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                        </fragments>
+                        <guard>
+                          <interactionConstraint Id="d04c205b-2ba4-42f2-82a0-0349b655381d" guardText="if (motion.ProcessFrame(frameUI) &gt; 0.15)" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="30cca76b-c34e-43fe-9c44-0b17f0a658b4" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="e8465a16-9cb5-41c8-af10-f5a47c9f5294" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="68f272f7-cfca-4f88-9ee3-2045e823bb0a" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="38634b99-0abc-4986-a974-631b20e17f83" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                      <interactionOperand Id="cf74e79b-7c45-4702-9e3d-d5ccb0db61ff" name="InteractionOperand2">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                          <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                        </coveredLifelines>
+                        <fragments>
+                          <combinedFragment Id="609723d4-0bfa-4666-9d39-a31993efbf0b" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="abd05f62-39de-4920-8c39-01eadd9e81d0" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                  <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="86e5d929-34d1-4373-a0ba-f58df9554b0b" guardText="if (OnMotionDetected != null)" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="9055713f-4606-42c3-b115-157c403039ae" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="f071efb5-07b2-451b-ad97-281988ce2979" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="990b8163-6257-4adb-9a3a-0d4e27d390be" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="bd6c955b-f972-413b-a710-d8e65f13cd09" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                        </fragments>
+                        <guard>
+                          <interactionConstraint Id="49c57442-e3bb-4595-8f4e-442cbea57d24" guardText="else" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="433def57-40ef-41bf-92a3-86891be63ae7" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="4dc10f31-d2d2-430d-9d6e-cc3752b965fe" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="3edbcb8d-d41d-4e5e-bead-5e638c386416" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="98e271cf-84a8-4907-8ac5-7b6d60dbda47" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="2c549225-2b4c-4953-8d9b-0e1bee30e3eb" guardText="if (OnMotionDetected != null)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="ad24d05e-4cbb-49c8-b785-9802249f9112" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="b6fede86-66c1-4684-a347-805711a9af05" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="5defbfc4-aa71-4960-9ac5-4c6e11327995" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="6378677d-d615-4c9b-a7a8-9c598a1e5b75" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="5defbfc4-aa71-4960-9ac5-4c6e11327995" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ad24d05e-4cbb-49c8-b785-9802249f9112" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="68f272f7-cfca-4f88-9ee3-2045e823bb0a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="30cca76b-c34e-43fe-9c44-0b17f0a658b4" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6068814f-e11c-45b3-bfc0-982d1535d279" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="78867e20-b9e8-4fac-bc57-8ff86d2cfa4c" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="da8794c9-b0aa-49d8-8033-77cd2fb40556" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8fe626e7-62a2-4c86-9734-25b7dd98ae4a" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="e1c0362b-e7e3-470e-b60a-1882622b4a2a" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="9ad4b1f9-237b-4cd9-855e-8ae5742384d9" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="8b2464e9-8a96-4768-a1df-024ce2cbdca0" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="27d33bb6-ada1-4c52-8e37-f1e8518de007" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c7555192-5471-4361-b4a9-313a6fe37248" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8fe626e7-62a2-4c86-9734-25b7dd98ae4a" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="bd7ae1da-65ab-46f4-aebf-72a363680b3a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e1c0362b-e7e3-470e-b60a-1882622b4a2a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e852808a-117c-4491-99b7-3d1f7f49352e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9ad4b1f9-237b-4cd9-855e-8ae5742384d9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="de1349b5-6d4a-4daa-822b-72036ca0b945" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="6e266e06-aea8-4f62-924b-f5481e5830f1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="272725df-dbe8-450d-b45a-d138ff708d9f" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1cd682be-4ad5-4fdd-8a13-1f06d5ec4b5b" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="beb98d03-998d-45eb-8df3-d32fdbba8d8d" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="272725df-dbe8-450d-b45a-d138ff708d9f" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5db4e407-5afb-45e0-91ed-79d547d4aabc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8b2464e9-8a96-4768-a1df-024ce2cbdca0" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1cd682be-4ad5-4fdd-8a13-1f06d5ec4b5b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="27d33bb6-ada1-4c52-8e37-f1e8518de007" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="beb98d03-998d-45eb-8df3-d32fdbba8d8d" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="6e266e06-aea8-4f62-924b-f5481e5830f1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="cc4ab5e7-35c8-4b1e-b554-64957f87f725" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e638856c-2f1e-4819-987d-1b2992f94210" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c7555192-5471-4361-b4a9-313a6fe37248" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="da8794c9-b0aa-49d8-8033-77cd2fb40556" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="78a8560b-0045-4eaf-8fe8-2ec546f4c708" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e8465a16-9cb5-41c8-af10-f5a47c9f5294" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="38634b99-0abc-4986-a974-631b20e17f83" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="433def57-40ef-41bf-92a3-86891be63ae7" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="3edbcb8d-d41d-4e5e-bead-5e638c386416" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a0af66c5-a7a4-469e-a30b-7c2700f56658" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="54fa1f3a-8f3a-4119-aaf9-5ca0f44ca4ff" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="98afd713-3c81-41da-b412-3e273922cbbb" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="9745db3a-230e-4c09-b7f5-3caecc5eb801" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="23b20f4b-f9e5-4ca3-9980-caf4cae9aac9" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="9055713f-4606-42c3-b115-157c403039ae" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="fb42752a-6577-4344-a8db-556db0aa7798" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="e360bebc-24a1-47ae-86a9-9421067aeed8" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="f071efb5-07b2-451b-ad97-281988ce2979" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="9745db3a-230e-4c09-b7f5-3caecc5eb801" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="763f0d80-a95d-4bb7-aae1-7db430a1484d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="23b20f4b-f9e5-4ca3-9980-caf4cae9aac9" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9055713f-4606-42c3-b115-157c403039ae" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="990b8163-6257-4adb-9a3a-0d4e27d390be" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="d73c6a9b-8282-4fc3-9ab5-6db5cd79d2ee" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="1ee597c8-8a42-42a0-b1df-089d57c52da0" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="30554a92-947d-4b88-a687-d833563d6f98" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="2101acf3-9e9d-4485-b891-6aaefa30b664" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="e8a03553-c617-4404-a080-bcca561db81f" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="30554a92-947d-4b88-a687-d833563d6f98" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="0eee1698-41f4-4ebf-96db-659e123bec4d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fb42752a-6577-4344-a8db-556db0aa7798" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2101acf3-9e9d-4485-b891-6aaefa30b664" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e360bebc-24a1-47ae-86a9-9421067aeed8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e8a03553-c617-4404-a080-bcca561db81f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="1ee597c8-8a42-42a0-b1df-089d57c52da0" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9b3a02da-c3af-4b34-b9e4-2bef76e44638" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bd6c955b-f972-413b-a710-d8e65f13cd09" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f071efb5-07b2-451b-ad97-281988ce2979" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="98afd713-3c81-41da-b412-3e273922cbbb" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d32b6246-3f25-418d-9013-aa20f8e906ba" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4dc10f31-d2d2-430d-9d6e-cc3752b965fe" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="98e271cf-84a8-4907-8ac5-7b6d60dbda47" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b6fede86-66c1-4684-a347-805711a9af05" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6378677d-d615-4c9b-a7a8-9c598a1e5b75" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="045f597d-fb63-40cd-8877-9309817720c0" LastKnownName="this.OnMotionDetected : Sensor.MotionDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <combinedFragment Id="81969188-44f7-4984-8abd-5811839e0761" name="CombinedFragment2" interactionOperator="Opt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="21aee8ce-07b3-4098-81d0-44c7c2e0cd38" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                  <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                  <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                  <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="5a2ce27c-3d05-4593-bae5-ac108dc575a3" name="CombinedFragment1" interactionOperator="Opt" customInteractionOperator="If">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                      <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                      <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                      <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="e9619b6d-6b06-49b4-80b4-e672859b247f" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                          <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                          <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                          <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+                        </coveredLifelines>
+                        <fragments>
+                          <combinedFragment Id="b8a3f4c4-3c1d-4c67-b85b-aa9d561cc59c" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="accf12d7-8a89-4cd8-be72-a2baf3d9fe83" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                  <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                  <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                </coveredLifelines>
+                                <fragments>
+                                  <combinedFragment Id="b2ddba2d-e5ae-4b07-a543-4119c010891b" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="If">
+                                    <coveredLifelines>
+                                      <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                      <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                      <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                    </coveredLifelines>
+                                    <operands>
+                                      <interactionOperand Id="9a0c9980-6576-4ea2-ba5c-ae0c3ba62ab5" name="InteractionOperand1">
+                                        <coveredLifelines>
+                                          <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                          <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                          <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                        </coveredLifelines>
+                                        <fragments>
+                                          <combinedFragment Id="814b8610-86c0-408b-b02d-595cdaa40ad1" name="CombinedFragment1" interactionOperator="Loop" customInteractionOperator="Loop">
+                                            <coveredLifelines>
+                                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                            </coveredLifelines>
+                                            <operands>
+                                              <interactionOperand Id="ad30cbb5-a3a0-45f7-9c9d-f9f5db16e013" name="InteractionOperand1">
+                                                <coveredLifelines>
+                                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                                  <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                                </coveredLifelines>
+                                                <guard>
+                                                  <interactionConstraint Id="efa4781f-5df9-4299-b0d3-4b507b514efb" guardText="for (int ie = 0;ie &lt; eyes.Length; ie++)">
+                                                    <maxInt>
+                                                      <literalString Id="ac4f1b08-5e9e-46b8-b687-c92872c38596" name="LiteralString1" />
+                                                    </maxInt>
+                                                    <minInt>
+                                                      <literalString Id="85ac63fc-3e59-4877-8fba-9053be3ed889" name="LiteralString2" />
+                                                    </minInt>
+                                                  </interactionConstraint>
+                                                </guard>
+                                                <operandOccurrenceSpecifications>
+                                                  <operandOccurrenceSpecificationMoniker Id="5175d5c7-3543-46b4-87b8-e45ec738ec04" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="a0959b4b-ceb8-4269-b508-a92a177884ec" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="bac8db9f-ecb6-47e0-a2f4-413cd11653c8" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="a2d26547-8014-4df2-8cda-a6ab0e671989" LastKnownName="OperandOccurrenceSpecification" />
+                                                </operandOccurrenceSpecifications>
+                                              </interactionOperand>
+                                            </operands>
+                                          </combinedFragment>
+                                          <combinedFragment Id="00bceb67-0bdd-43b7-981d-b9b6f907ae3b" name="CombinedFragment2" interactionOperator="Opt" customInteractionOperator="If">
+                                            <coveredLifelines>
+                                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                            </coveredLifelines>
+                                            <operands>
+                                              <interactionOperand Id="1d5f2e39-d78b-448f-9866-c66076ded1ca" name="InteractionOperand1">
+                                                <coveredLifelines>
+                                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                                  <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                                </coveredLifelines>
+                                                <guard>
+                                                  <interactionConstraint Id="45f5d00e-2138-451b-867d-83c41ea8d5d3" guardText="if (OnEyesDetected != null)" />
+                                                </guard>
+                                                <operandOccurrenceSpecifications>
+                                                  <operandOccurrenceSpecificationMoniker Id="6960907c-0a90-4000-ba96-f6503e9bc277" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="786acd42-13ae-440f-a37d-36fd8eaf13d1" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="6243539a-6776-45fb-b35f-4e15399bb8a6" LastKnownName="OperandOccurrenceSpecification" />
+                                                  <operandOccurrenceSpecificationMoniker Id="7d7d3586-375e-4562-b7e4-bff304a27fff" LastKnownName="OperandOccurrenceSpecification" />
+                                                </operandOccurrenceSpecifications>
+                                              </interactionOperand>
+                                            </operands>
+                                          </combinedFragment>
+                                        </fragments>
+                                        <guard>
+                                          <interactionConstraint Id="e174669b-cf60-461e-8c92-aa05c5dc19f0" guardText="if (eyeDetections.Length &gt; 0)" />
+                                        </guard>
+                                        <operandOccurrenceSpecifications>
+                                          <operandOccurrenceSpecificationMoniker Id="cc269cbc-1870-4c07-a8b8-ce35a73cfcd6" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="2816c752-52fb-4d45-ae0f-46cb6b37615a" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="d94a034a-e24f-4c73-a6a9-899ded9b15b3" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="9caa5b68-e3a3-4a43-a680-936b5b81089a" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="4e37fe98-e782-4d3a-a0e3-03ff3bdb7ec5" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="5014198b-6fb1-4e95-960d-7852485d955a" LastKnownName="OperandOccurrenceSpecification" />
+                                        </operandOccurrenceSpecifications>
+                                      </interactionOperand>
+                                      <interactionOperand Id="4472485c-1b3a-47d5-9c9f-fd614b5876ff" name="InteractionOperand2">
+                                        <coveredLifelines>
+                                          <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                          <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+                                          <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+                                        </coveredLifelines>
+                                        <guard>
+                                          <interactionConstraint Id="049657f8-6998-4a30-be21-901b6f208cd7" guardText="else" />
+                                        </guard>
+                                        <operandOccurrenceSpecifications>
+                                          <operandOccurrenceSpecificationMoniker Id="8ce8875e-216c-4704-af4d-0df6f01d325a" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="e5cee9a3-1d3c-4338-9050-38ceb59894d1" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="d69a0cf1-206b-484c-9534-caebef32781e" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="5439ea72-af32-4387-8723-680e8a57ceac" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="2c9f7e2f-12ae-4fd1-a6c0-fae00190f1ea" LastKnownName="OperandOccurrenceSpecification" />
+                                          <operandOccurrenceSpecificationMoniker Id="1327ef54-f35b-4e3e-b16a-7da5f30f01b2" LastKnownName="OperandOccurrenceSpecification" />
+                                        </operandOccurrenceSpecifications>
+                                      </interactionOperand>
+                                    </operands>
+                                  </combinedFragment>
+                                </fragments>
+                                <guard>
+                                  <interactionConstraint Id="f284c340-b48a-48f5-a024-fd1793b6c281" guardText="for (int i = 0;i &lt; faces.Length; i++)">
+                                    <maxInt>
+                                      <literalString Id="a2d783db-b6d4-4a90-a22f-f0cafdac8dd8" name="LiteralString1" />
+                                    </maxInt>
+                                    <minInt>
+                                      <literalString Id="4ea07247-8f00-4c96-8c5b-40174a84319d" name="LiteralString2" />
+                                    </minInt>
+                                  </interactionConstraint>
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="7550b055-2719-4841-83dd-9779d13e75bd" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="e6c0da40-2dc4-49d0-b5cd-dcb5a12827ee" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="81e2eaa3-496b-47b5-8734-682ed49ab307" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="ccf5bd18-ae14-4d40-8706-e0a8c48c0687" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="384c47c5-11a6-49e5-bfdf-d7d1c2402f29" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="7ae1ba56-661a-4039-a1dd-1a4ed29d042b" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                          <combinedFragment Id="301dbe45-2775-4c3e-9681-0b1c279b93e3" name="CombinedFragment2" interactionOperator="Opt" customInteractionOperator="If">
+                            <coveredLifelines>
+                              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+                            </coveredLifelines>
+                            <operands>
+                              <interactionOperand Id="2938cd32-924c-4d10-9deb-c3262d6e4aa8" name="InteractionOperand1">
+                                <coveredLifelines>
+                                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                                  <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+                                </coveredLifelines>
+                                <guard>
+                                  <interactionConstraint Id="047fa158-e0ce-4f0d-a49c-261e9f133abb" guardText="if (OnFaceDetected != null)" />
+                                </guard>
+                                <operandOccurrenceSpecifications>
+                                  <operandOccurrenceSpecificationMoniker Id="5027ee1f-855c-44de-ba3e-16e0fd618fd8" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="94c87a37-f252-48d9-bc5d-dde8cbfc6b9d" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="1f7595a9-d444-4d5d-81d2-bb5a66ba6ff5" LastKnownName="OperandOccurrenceSpecification" />
+                                  <operandOccurrenceSpecificationMoniker Id="b42a1184-9869-4f51-9d5e-08e16fdef0ab" LastKnownName="OperandOccurrenceSpecification" />
+                                </operandOccurrenceSpecifications>
+                              </interactionOperand>
+                            </operands>
+                          </combinedFragment>
+                        </fragments>
+                        <guard>
+                          <interactionConstraint Id="2c2b9b0c-4eb0-4f44-b222-b7d307dc0610" guardText="if (detectorFace.DetectedObjects != null &amp;&amp; detectorFace.DetectedObjects.Length &gt; 0)" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="acbd741b-9455-4bcd-97a5-aa331e82e816" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="aacff2c5-d2b3-4324-992d-fa1b6eb2d6fa" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="252e05e5-de5c-4502-8481-a4470eacd831" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="6f2b22d9-519d-4221-bc62-61b70d996e44" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="0e630d00-ea7f-4d00-902d-e7b69d5a5b0a" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="8c71c797-6d06-4163-ba75-ee6e52313bcb" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="ab2da375-2add-4f68-8a43-1f8fef953024" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="8daa563d-8a84-4054-a4d1-57eb28f007e9" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="954c166f-acf3-4844-8483-7dc8b2be52a0" guardText="if (OnFaceDetected != null)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="94b1c626-0dff-43ff-9f64-53c64fb90c58" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="3ea38161-12cc-4d65-a5af-8df0fd85eb4e" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="a0e3d974-8fcf-4786-be40-1eac2ce8c73c" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="0ddac571-f5ec-4688-93e2-449973d71931" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="85ba57e0-e844-4e9c-86cd-b6f361cda99a" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="37362e24-ddd6-4c22-bb5b-9e5b5ccfed20" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="dd5964ad-f676-4573-a8d7-cfcaea188301" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="81b6d6e9-0e75-4c30-b2e9-6f7608120cb3" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="dd5964ad-f676-4573-a8d7-cfcaea188301" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a0e3d974-8fcf-4786-be40-1eac2ce8c73c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="94b1c626-0dff-43ff-9f64-53c64fb90c58" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="85ba57e0-e844-4e9c-86cd-b6f361cda99a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0e630d00-ea7f-4d00-902d-e7b69d5a5b0a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ab2da375-2add-4f68-8a43-1f8fef953024" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="acbd741b-9455-4bcd-97a5-aa331e82e816" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="252e05e5-de5c-4502-8481-a4470eacd831" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="384c47c5-11a6-49e5-bfdf-d7d1c2402f29" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7550b055-2719-4841-83dd-9779d13e75bd" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="81e2eaa3-496b-47b5-8734-682ed49ab307" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="cc269cbc-1870-4c07-a8b8-ce35a73cfcd6" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4e37fe98-e782-4d3a-a0e3-03ff3bdb7ec5" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d94a034a-e24f-4c73-a6a9-899ded9b15b3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5175d5c7-3543-46b4-87b8-e45ec738ec04" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bac8db9f-ecb6-47e0-a2f4-413cd11653c8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="b284ee13-3664-40d5-b1ba-ed7e519eb7a5" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="9b475e00-e4cf-47b2-a7fd-0a72a170120d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f4cb891b-6cd1-4ac0-80fd-faf484270288" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="8b34c44d-91b5-4534-a5fd-ea39b057f1f3" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="79381262-ee54-4f79-b76c-0497dca512d5" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f4cb891b-6cd1-4ac0-80fd-faf484270288" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="48dec111-ed66-45b2-8aeb-5a3686a96490" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="dade44eb-8089-4951-9fbe-f24fe6fd71d7" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8b34c44d-91b5-4534-a5fd-ea39b057f1f3" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="937ea81a-6c81-4eae-a4a1-eda8f4d35e2f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="79381262-ee54-4f79-b76c-0497dca512d5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="9b475e00-e4cf-47b2-a7fd-0a72a170120d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b3943b45-47de-4bf9-9d83-e1ef488e0b7d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a0959b4b-ceb8-4269-b508-a92a177884ec" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a2d26547-8014-4df2-8cda-a6ab0e671989" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="52fcd8c0-55b3-4fbe-827c-4f3bf83deae4" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="65724ec0-8dfd-496f-9bb9-cf823b1b5db8" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="69161067-84a3-42ec-9e10-ce2794d10bc1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e0c51c1d-1125-4ab0-8b77-0b4903cd5cde" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="7631d0b2-6fc8-40c6-859e-c0a58495fd84" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6960907c-0a90-4000-ba96-f6503e9bc277" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="ddc6d7f1-ba7d-4716-8d87-20c9b22ac3de" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="509cd25b-2817-49b9-b675-71615a4f0d54" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="786acd42-13ae-440f-a37d-36fd8eaf13d1" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e0c51c1d-1125-4ab0-8b77-0b4903cd5cde" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="17ecb5a6-2df1-4feb-9e99-cfd005f945c6" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7631d0b2-6fc8-40c6-859e-c0a58495fd84" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6960907c-0a90-4000-ba96-f6503e9bc277" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6243539a-6776-45fb-b35f-4e15399bb8a6" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="527331de-708c-4f70-a254-6cc092ae6634" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="1315b3f1-9284-4c69-93d1-76fbb896f218" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="41af0f1f-0f74-49ba-bcbb-9827627a7a96" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="bac7e835-4b73-41b8-85f9-16c6daee0eb4" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="5f7f68ae-5d61-43db-bd9c-61eca1c3ca78" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="41af0f1f-0f74-49ba-bcbb-9827627a7a96" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5007a1c9-8947-4754-af3a-5eab9033f61a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ddc6d7f1-ba7d-4716-8d87-20c9b22ac3de" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bac7e835-4b73-41b8-85f9-16c6daee0eb4" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5f7f68ae-5d61-43db-bd9c-61eca1c3ca78" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="509cd25b-2817-49b9-b675-71615a4f0d54" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="1315b3f1-9284-4c69-93d1-76fbb896f218" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="abe1cc52-a4d5-4dea-979c-f8efa4706b4f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7d7d3586-375e-4562-b7e4-bff304a27fff" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="786acd42-13ae-440f-a37d-36fd8eaf13d1" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="69161067-84a3-42ec-9e10-ce2794d10bc1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e6d0a857-87f8-40ec-9a0f-ac1b714061fc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5014198b-6fb1-4e95-960d-7852485d955a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2816c752-52fb-4d45-ae0f-46cb6b37615a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9caa5b68-e3a3-4a43-a680-936b5b81089a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2c9f7e2f-12ae-4fd1-a6c0-fae00190f1ea" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d69a0cf1-206b-484c-9534-caebef32781e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8ce8875e-216c-4704-af4d-0df6f01d325a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1327ef54-f35b-4e3e-b16a-7da5f30f01b2" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5439ea72-af32-4387-8723-680e8a57ceac" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e5cee9a3-1d3c-4338-9050-38ceb59894d1" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7ae1ba56-661a-4039-a1dd-1a4ed29d042b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e6c0da40-2dc4-49d0-b5cd-dcb5a12827ee" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ccf5bd18-ae14-4d40-8706-e0a8c48c0687" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5f132eca-04a7-4d01-91c2-8c7986a31582" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="8b08eb4f-9bef-45b3-953e-413cae3326e0" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="2266b6e5-af8e-43e6-a944-d5329c34d8cc" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ea47a3e3-f273-41fc-8c9e-2bdc8488e826" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="07e2a6bf-1e5c-4ec8-9001-06e2da3a00f7" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5027ee1f-855c-44de-ba3e-16e0fd618fd8" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="aa57616b-e884-4c10-9e53-f7b77c3bacc2" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6a764857-b5be-4004-b923-51c5b22fa23f" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="94c87a37-f252-48d9-bc5d-dde8cbfc6b9d" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ea47a3e3-f273-41fc-8c9e-2bdc8488e826" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="a032d05c-4973-42a5-bab4-e2a92701de61" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="07e2a6bf-1e5c-4ec8-9001-06e2da3a00f7" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5027ee1f-855c-44de-ba3e-16e0fd618fd8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1f7595a9-d444-4d5d-81d2-bb5a66ba6ff5" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9d6a190c-2a63-495e-9a6e-79f6c8522237" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="b09885e3-d8cb-4b06-8196-4dd387188a39" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="02f0842c-6377-44f2-ba9a-0a380e191cf1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="107b0543-27e4-44d1-9a29-53371c9a0b1f" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b342050f-1e03-4fd5-976a-c58afa3cf45b" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="02f0842c-6377-44f2-ba9a-0a380e191cf1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c592e596-3740-42d6-ac88-8dc44fea37dd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aa57616b-e884-4c10-9e53-f7b77c3bacc2" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="107b0543-27e4-44d1-9a29-53371c9a0b1f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="6a764857-b5be-4004-b923-51c5b22fa23f" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b342050f-1e03-4fd5-976a-c58afa3cf45b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="b09885e3-d8cb-4b06-8196-4dd387188a39" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8ba41bd3-d77d-4631-ad3e-4f5d0f96e618" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b42a1184-9869-4f51-9d5e-08e16fdef0ab" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="94c87a37-f252-48d9-bc5d-dde8cbfc6b9d" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="2266b6e5-af8e-43e6-a944-d5329c34d8cc" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="b6852c4c-5e00-4913-b299-595d54a670cb" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8daa563d-8a84-4054-a4d1-57eb28f007e9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="aacff2c5-d2b3-4324-992d-fa1b6eb2d6fa" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6f2b22d9-519d-4221-bc62-61b70d996e44" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8c71c797-6d06-4163-ba75-ee6e52313bcb" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="3ea38161-12cc-4d65-a5af-8df0fd85eb4e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="0ddac571-f5ec-4688-93e2-449973d71931" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="c091b629-51af-4710-86a0-00d0d2273589" LastKnownName="eyes[ie] : Eye" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="81b6d6e9-0e75-4c30-b2e9-6f7608120cb3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" LastKnownName="this.OnFaceDetected : Sensor.FaceDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="37362e24-ddd6-4c22-bb5b-9e5b5ccfed20" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a96c899f-772d-47f6-b628-5d02e8808218" LastKnownName="this.OnEyesDetected : Sensor.EyesDetected" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="119cf591-496f-4763-ad2d-946b7df44e74" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="7df5897a-6a67-4c72-afc9-0da86eb542fc" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="f4de254e-faf8-48ba-ab1b-d9272171ba6b" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="fb1ac0d6-24ec-43a6-b881-942c3c92df57" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="82e4a263-20e8-4f74-804b-3f2975323b65" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ac2ce857-cfc0-4ad0-9af0-a7c96f7cc069" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="69986e35-ad5a-4524-8586-78b14e3432df" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="76ded42a-d1ef-46df-83d5-2c07a0ff0ed1" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="5c0b4c0d-c026-4a19-a541-aba7983518ef" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="112b755c-2792-45c1-a7b4-a0454f742de8" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="cb23e535-8cc0-4d81-b1df-136e83248d90" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="fb1ac0d6-24ec-43a6-b881-942c3c92df57" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e4a7f1e5-7cd2-4916-b2b2-def7dbd5c731" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="82e4a263-20e8-4f74-804b-3f2975323b65" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="cbb58612-571f-4559-9223-59f56f6debbe" name="CombinedFragment3" interactionOperator="Opt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="2274af49-4477-48e6-b8ea-403bb83b551b" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+                  <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+                  <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="faf2e4af-0cef-4a7e-b42c-fd8fc73d9d13" guardText="if (OnFrameReceived != null)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="ac2ce857-cfc0-4ad0-9af0-a7c96f7cc069" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="cb23e535-8cc0-4d81-b1df-136e83248d90" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="5eed55a5-aabd-475f-93a0-5d2b5c3bfb8c" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="c059c2ff-f659-40af-83ba-ebbc79ec9cce" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="bd1c30f4-2fab-4e27-b05e-dd9e426be6ba" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="4223301f-6ba3-41e3-ba36-efeedffe524c" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="ac2ce857-cfc0-4ad0-9af0-a7c96f7cc069" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="bd1c30f4-2fab-4e27-b05e-dd9e426be6ba" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5eed55a5-aabd-475f-93a0-5d2b5c3bfb8c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="5eef7681-e089-42f0-bf07-eda18915fcd5" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="2afe6643-4d01-4fdb-9611-4c1957dc24bb" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="a70f53b5-dfb4-4ba7-8477-0a0d1762351d" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="821c2612-b7dd-4555-a7b9-ad7920c39247" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b45d4431-118e-4ef9-a8bc-35ee04003585" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="a70f53b5-dfb4-4ba7-8477-0a0d1762351d" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="59e88eef-eb08-450e-80fd-4acc9a6f8768" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="69986e35-ad5a-4524-8586-78b14e3432df" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="821c2612-b7dd-4555-a7b9-ad7920c39247" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="76ded42a-d1ef-46df-83d5-2c07a0ff0ed1" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b45d4431-118e-4ef9-a8bc-35ee04003585" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="2afe6643-4d01-4fdb-9611-4c1957dc24bb" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="86176f59-b942-4c64-8fb4-d949feb0692e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="dc446a82-d15f-42f5-9ddc-db3e54bab7dc" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="974ebb95-69f1-4d69-85df-ae28c063eeb1" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="74d88ea8-6a53-45ed-a3b4-d1fbd5085538" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="f75fccc1-411b-4caf-b511-0517391edf82" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="1dd51244-5a49-4e97-8f49-7980ba39efc6" LastKnownName="MessageOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="74d88ea8-6a53-45ed-a3b4-d1fbd5085538" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="acc4da9b-34bc-41f3-85ed-d8ba74b807ad" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5c0b4c0d-c026-4a19-a541-aba7983518ef" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f75fccc1-411b-4caf-b511-0517391edf82" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1dd51244-5a49-4e97-8f49-7980ba39efc6" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="112b755c-2792-45c1-a7b4-a0454f742de8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="974ebb95-69f1-4d69-85df-ae28c063eeb1" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="54a8f4a3-5b40-4d69-8d16-c4ce45ef93bd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4223301f-6ba3-41e3-ba36-efeedffe524c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="1bf41337-972c-4247-b709-c017a561b88b" LastKnownName="this.OnFrameReceived : Sensor.FrameReceived" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c059c2ff-f659-40af-83ba-ebbc79ec9cce" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="f702d183-06b3-4484-b819-59430cb2c65e" LastKnownName="frame : Frame" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="cb23e535-8cc0-4d81-b1df-136e83248d90" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="f4de254e-faf8-48ba-ab1b-d9272171ba6b" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="acd7968d-e8fb-4c34-aca4-28807ea1ac1d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="1a744cc5-f128-4c7e-bae3-445da0733333" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="0f1d7e22-52dd-4ae5-b5bd-c643e942f76f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" LastKnownName="this : Sensor" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="3e954cbe-cb2f-438c-b6da-c52e2ba972a3" name="this : Sensor" isActor="false" lifelineDisplayName="this : Sensor" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor ObjectInstance=&quot;Object instance 3&quot;)" referencedType="AgentSensorFaceLib‎.Sensor">
+            <referencesInternal>
+              <reference Id="aacef127-6ff4-4c6a-8cc2-86faad994fb9" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)" tag="DGQL" />
+              <reference Id="0a485b42-0a03-454f-82e9-1c0ed9f00a27" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="9dd24f5a-4bc3-4c54-b487-6c576eddc274" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="1a744cc5-f128-4c7e-bae3-445da0733333" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="045f597d-fb63-40cd-8877-9309817720c0" name="this.OnMotionDetected : Sensor.MotionDetected" isActor="false" lifelineDisplayName="this.OnMotionDetected : Sensor.MotionDetected" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=OnMotionDetected ObjectInstance=&quot;Object instance 20&quot;)" referencedType="AgentSensorFaceLib‎.Sensor‎.MotionDetected">
+            <referencesInternal>
+              <reference Id="4d092623-10a4-41c9-93c7-4f65b6562981" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor))&quot;)" tag="DGQL" />
+              <reference Id="d350c5e2-a98e-4efc-899d-63bda9065444" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor))" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="5defbfc4-aa71-4960-9ac5-4c6e11327995" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="68f272f7-cfca-4f88-9ee3-2045e823bb0a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e852808a-117c-4491-99b7-3d1f7f49352e" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="272725df-dbe8-450d-b45a-d138ff708d9f" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="6e266e06-aea8-4f62-924b-f5481e5830f1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="e638856c-2f1e-4819-987d-1b2992f94210" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="38634b99-0abc-4986-a974-631b20e17f83" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="3edbcb8d-d41d-4e5e-bead-5e638c386416" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="990b8163-6257-4adb-9a3a-0d4e27d390be" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="30554a92-947d-4b88-a687-d833563d6f98" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="1ee597c8-8a42-42a0-b1df-089d57c52da0" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="bd6c955b-f972-413b-a710-d8e65f13cd09" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="98e271cf-84a8-4907-8ac5-7b6d60dbda47" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6378677d-d615-4c9b-a7a8-9c598a1e5b75" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="c091b629-51af-4710-86a0-00d0d2273589" name="eyes[ie] : Eye" isActor="false" lifelineDisplayName="eyes[ie] : Eye" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye ObjectInstance=&quot;Object instance 92&quot;)" referencedType="AgentSensorFaceLib‎.Eye">
+            <referencesInternal>
+              <reference Id="6a44e330-0967-480c-ae8f-7d7f5095ae7d" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye)&quot;)" tag="DGQL" />
+              <reference Id="b69c632f-b761-4811-8c00-3943b91b5822" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="a0e3d974-8fcf-4786-be40-1eac2ce8c73c" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="252e05e5-de5c-4502-8481-a4470eacd831" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="81e2eaa3-496b-47b5-8734-682ed49ab307" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="d94a034a-e24f-4c73-a6a9-899ded9b15b3" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="bac8db9f-ecb6-47e0-a2f4-413cd11653c8" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="f4cb891b-6cd1-4ac0-80fd-faf484270288" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="9b475e00-e4cf-47b2-a7fd-0a72a170120d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="a2d26547-8014-4df2-8cda-a6ab0e671989" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="9caa5b68-e3a3-4a43-a680-936b5b81089a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="d69a0cf1-206b-484c-9534-caebef32781e" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5439ea72-af32-4387-8723-680e8a57ceac" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ccf5bd18-ae14-4d40-8706-e0a8c48c0687" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6f2b22d9-519d-4221-bc62-61b70d996e44" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0ddac571-f5ec-4688-93e2-449973d71931" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="a96c899f-772d-47f6-b628-5d02e8808218" name="this.OnEyesDetected : Sensor.EyesDetected" isActor="false" lifelineDisplayName="this.OnEyesDetected : Sensor.EyesDetected" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=OnEyesDetected ObjectInstance=&quot;Object instance 115&quot;)" referencedType="AgentSensorFaceLib‎.Sensor‎.EyesDetected">
+            <referencesInternal>
+              <reference Id="de5b9c2c-e32c-4bbd-aa97-f47dc3d423d1" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=EyesDetected ParentType=Sensor))&quot;)" tag="DGQL" />
+              <reference Id="2e124d27-cd47-4390-93b3-cdf06447bd9d" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=EyesDetected ParentType=Sensor))" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="85ba57e0-e844-4e9c-86cd-b6f361cda99a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="0e630d00-ea7f-4d00-902d-e7b69d5a5b0a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="384c47c5-11a6-49e5-bfdf-d7d1c2402f29" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="4e37fe98-e782-4d3a-a0e3-03ff3bdb7ec5" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="6243539a-6776-45fb-b35f-4e15399bb8a6" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="41af0f1f-0f74-49ba-bcbb-9827627a7a96" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="1315b3f1-9284-4c69-93d1-76fbb896f218" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7d7d3586-375e-4562-b7e4-bff304a27fff" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="5014198b-6fb1-4e95-960d-7852485d955a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="2c9f7e2f-12ae-4fd1-a6c0-fae00190f1ea" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="1327ef54-f35b-4e3e-b16a-7da5f30f01b2" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="7ae1ba56-661a-4039-a1dd-1a4ed29d042b" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="8c71c797-6d06-4163-ba75-ee6e52313bcb" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="37362e24-ddd6-4c22-bb5b-9e5b5ccfed20" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="de1db6d4-665e-485d-9ce5-9f4f9b960f3b" name="this.OnFaceDetected : Sensor.FaceDetected" isActor="false" lifelineDisplayName="this.OnFaceDetected : Sensor.FaceDetected" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=OnFaceDetected ObjectInstance=&quot;Object instance 36&quot;)" referencedType="AgentSensorFaceLib‎.Sensor‎.FaceDetected">
+            <referencesInternal>
+              <reference Id="f87eb6e0-7e94-4a7a-8a5c-d080387ad509" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FaceDetected ParentType=Sensor))&quot;)" tag="DGQL" />
+              <reference Id="f68744cf-6f66-4feb-827c-ae2f82b2a35d" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FaceDetected ParentType=Sensor))" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="dd5964ad-f676-4573-a8d7-cfcaea188301" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ab2da375-2add-4f68-8a43-1f8fef953024" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="1f7595a9-d444-4d5d-81d2-bb5a66ba6ff5" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="02f0842c-6377-44f2-ba9a-0a380e191cf1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="b09885e3-d8cb-4b06-8196-4dd387188a39" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="b42a1184-9869-4f51-9d5e-08e16fdef0ab" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="8daa563d-8a84-4054-a4d1-57eb28f007e9" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="81b6d6e9-0e75-4c30-b2e9-6f7608120cb3" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="f702d183-06b3-4484-b819-59430cb2c65e" name="frame : Frame" isActor="false" lifelineDisplayName="frame : Frame" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame ObjectInstance=&quot;Object instance 123&quot;)" referencedType="AgentSensorFaceLib‎.Frame">
+            <referencesInternal>
+              <reference Id="90a81d77-ba3c-42a6-b481-a5f78787ad5b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame)&quot;)" tag="DGQL" />
+              <reference Id="d52592bf-a129-40ee-a8a4-cf3150752592" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="5eed55a5-aabd-475f-93a0-5d2b5c3bfb8c" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="a70f53b5-dfb4-4ba7-8477-0a0d1762351d" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="2afe6643-4d01-4fdb-9611-4c1957dc24bb" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c059c2ff-f659-40af-83ba-ebbc79ec9cce" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="1bf41337-972c-4247-b709-c017a561b88b" name="this.OnFrameReceived : Sensor.FrameReceived" isActor="false" lifelineDisplayName="this.OnFrameReceived : Sensor.FrameReceived" referencedInstance="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=OnFrameReceived ObjectInstance=&quot;Object instance 49&quot;)" referencedType="AgentSensorFaceLib‎.Sensor‎.FrameReceived">
+            <referencesInternal>
+              <reference Id="a7f99799-51ed-4812-acc3-81987d4b81c7" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FrameReceived ParentType=Sensor))&quot;)" tag="DGQL" />
+              <reference Id="036255f7-c52c-4900-9ba2-1a5bc8f44b24" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FrameReceived ParentType=Sensor))" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="bd1c30f4-2fab-4e27-b05e-dd9e426be6ba" LastKnownName="OperandOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="74d88ea8-6a53-45ed-a3b4-d1fbd5085538" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="974ebb95-69f1-4d69-85df-ae28c063eeb1" LastKnownName="ExecutionOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="4223301f-6ba3-41e3-ba36-efeedffe524c" LastKnownName="OperandOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="8591c7f2-f408-48f7-93fa-6e85203e6c88" name="processFrame" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="9272598a-e814-43ea-8c70-5e895a285661" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=processFrame OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=&amp;quot;$(ProgramFilesUri)/AForge.NET/Framework/Release/AForge.Video.dll&amp;quot; Namespace=AForge.Video Type=NewFrameEventArgs)]))&quot;)" tag="DGQL" />
+              <reference Id="0bd690b9-a965-4047-8235-6f4ca8985230" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=processFrame OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;$(ProgramFilesUri)/AForge.NET/Framework/Release/AForge.Video.dll&quot; Namespace=AForge.Video Type=NewFrameEventArgs)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="8f6f7d80-dc05-42c4-93a1-43ea1184fabd" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="5ea02263-a219-4c69-a25d-e5185410bdf8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="f24468ea-74c8-43db-9cfa-1ba0613173f9" name="updateMotion" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="updateMotion(true)">
+            <referencesInternal>
+              <reference Id="d449ebfc-3487-43fe-89bc-a4e8a69791aa" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateMotion OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Boolean)]))&quot;)" tag="DGQL" />
+              <reference Id="29083a76-a1cf-4955-ada1-02a41ba13604" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateMotion OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Boolean)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6068814f-e11c-45b3-bfc0-982d1535d279" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e1c0362b-e7e3-470e-b60a-1882622b4a2a" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="2585cbe3-3160-4b4d-b5c3-bfeeb752764f" name="Invoke" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="OnMotionDetected(this, isMotion)">
+            <referencesInternal>
+              <reference Id="bd8dceb1-2b08-4200-8830-992246cb97bc" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Boolean)]))&quot;)" tag="DGQL" />
+              <reference Id="f033ca79-4933-4c50-ae1f-7a0695c38255" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Boolean)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8b2464e9-8a96-4768-a1df-024ce2cbdca0" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1cd682be-4ad5-4fdd-8a13-1f06d5ec4b5b" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="a3298939-5613-448c-82bd-9f6feb80ab1a" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="beb98d03-998d-45eb-8df3-d32fdbba8d8d" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="27d33bb6-ada1-4c52-8e37-f1e8518de007" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="41ea09ac-26d5-4dce-aed8-5d35d19ff11e" name="updateMotion" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="updateMotion(false)">
+            <referencesInternal>
+              <reference Id="293628fd-52a7-4a99-babe-ea56c468ecbd" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateMotion OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Boolean)]))&quot;)" tag="DGQL" />
+              <reference Id="4f4e6450-95c1-407c-8123-94fd17985426" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateMotion OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Boolean)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a0af66c5-a7a4-469e-a30b-7c2700f56658" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="23b20f4b-f9e5-4ca3-9980-caf4cae9aac9" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="293e824f-4001-4379-be4d-f5b3b5b876d4" name="Invoke" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="OnMotionDetected(this, isMotion)">
+            <referencesInternal>
+              <reference Id="136f7a42-6b6a-405d-8912-c8099819d2d2" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Boolean)]))&quot;)" tag="DGQL" />
+              <reference Id="5ce05e24-eb98-42aa-a268-9799fe6dd43b" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=MotionDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Boolean)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="fb42752a-6577-4344-a8db-556db0aa7798" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="2101acf3-9e9d-4485-b891-6aaefa30b664" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="1a3f0a6f-8d97-4f10-9ded-b696fb7f94a8" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="e8a03553-c617-4404-a080-bcca561db81f" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e360bebc-24a1-47ae-86a9-9421067aeed8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="7f9e6a5a-d9a9-45cf-b0fb-3bb38d5039cb" name="Create Eye" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false" signatureText="new Eye()">
+            <referencesInternal>
+              <reference Id="c529f7f6-94c5-4663-9acd-f73b409db273" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye Member=.ctor)&quot;)" tag="DGQL" />
+              <reference Id="06f3e672-2122-427e-b426-c6d69b5971da" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Eye Member=.ctor)" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="dade44eb-8089-4951-9fbe-f24fe6fd71d7" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="8b34c44d-91b5-4534-a5fd-ea39b057f1f3" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="cf6fba5c-a087-4c2c-8d89-b7dd76a1bcd1" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="79381262-ee54-4f79-b76c-0497dca512d5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="937ea81a-6c81-4eae-a4a1-eda8f4d35e2f" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="74d7bc19-52b5-494f-8b31-ec3c6fd246f9" name="updateEyeDetected" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="updateEyeDetected(eyes)">
+            <referencesInternal>
+              <reference Id="639359f1-cccf-45fa-9f88-1e3e86372f0f" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateEyeDetected OverloadingParameters=[(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Eye ArrayRank=1 ParentType=Eye))]))&quot;)" tag="DGQL" />
+              <reference Id="5514e81b-5d34-4817-8262-eb4438d8363f" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateEyeDetected OverloadingParameters=[(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Eye ArrayRank=1 ParentType=Eye))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="52fcd8c0-55b3-4fbe-827c-4f3bf83deae4" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7631d0b2-6fc8-40c6-859e-c0a58495fd84" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="107c7636-8404-4811-963d-3031493184fb" name="Invoke" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="OnEyesDetected(this, eyes)">
+            <referencesInternal>
+              <reference Id="c09ba7d4-692f-4eab-b061-4363a75bd8a9" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=EyesDetected ParentType=Sensor))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=EyesDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Eye ArrayRank=1 ParentType=Eye))]))&quot;)" tag="DGQL" />
+              <reference Id="7352db98-7fba-49d5-8706-448965b5bb4c" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=EyesDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Eye ArrayRank=1 ParentType=Eye))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ddc6d7f1-ba7d-4716-8d87-20c9b22ac3de" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bac7e835-4b73-41b8-85f9-16c6daee0eb4" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="fc4d9d33-f577-44cb-9532-83e727b29303" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5f7f68ae-5d61-43db-bd9c-61eca1c3ca78" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="509cd25b-2817-49b9-b675-71615a4f0d54" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="dcd9e46b-5348-4077-8cbd-1ebb52608afa" name="updateFaceDetected" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="updateFaceDetected(faces)">
+            <referencesInternal>
+              <reference Id="2fa52fcb-97b7-436e-b9b4-903b590ffc9e" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateFaceDetected OverloadingParameters=[(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Face ArrayRank=1 ParentType=Face))]))&quot;)" tag="DGQL" />
+              <reference Id="1b975cb7-9e87-480a-8fd3-ba4a22e1800e" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateFaceDetected OverloadingParameters=[(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Face ArrayRank=1 ParentType=Face))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5f132eca-04a7-4d01-91c2-8c7986a31582" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="07e2a6bf-1e5c-4ec8-9001-06e2da3a00f7" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="c06f6f2d-0db8-4b17-924f-5d529b7debda" name="Invoke" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="OnFaceDetected(this, faces)">
+            <referencesInternal>
+              <reference Id="966741e1-5d70-49e4-963c-472f60fad51a" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FaceDetected ParentType=Sensor))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FaceDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Face ArrayRank=1 ParentType=Face))]))&quot;)" tag="DGQL" />
+              <reference Id="a809b2b2-0afe-4475-b3d5-859ad51885bd" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FaceDetected ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=Face ArrayRank=1 ParentType=Face))]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="aa57616b-e884-4c10-9e53-f7b77c3bacc2" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="107b0543-27e4-44d1-9a29-53371c9a0b1f" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="f286384c-70ed-46e6-84ef-089127ed8abd" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b342050f-1e03-4fd5-976a-c58afa3cf45b" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="6a764857-b5be-4004-b923-51c5b22fa23f" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="cd5b57ed-5ba2-4345-bf48-5a5d6cc5f1db" name="updateFrameReceived" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true" signatureText="updateFrameReceived(frame)">
+            <referencesInternal>
+              <reference Id="20036cf4-1a74-45a9-aef9-abace403a058" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateFrameReceived OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Drawing.dll&amp;quot; Namespace=System.Drawing Type=Bitmap)]))&quot;)" tag="DGQL" />
+              <reference Id="5aa38388-76fb-49d0-9b63-57f6f4473894" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor Member=(Name=updateFrameReceived OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Drawing.dll&quot; Namespace=System.Drawing Type=Bitmap)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="119cf591-496f-4763-ad2d-946b7df44e74" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="82e4a263-20e8-4f74-804b-3f2975323b65" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="58cc5d01-8194-412a-9a14-a98d5ae11a87" name="Create Frame" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false" signatureText="new Frame(bmp)">
+            <referencesInternal>
+              <reference Id="037d5eae-0257-4ef0-bbd2-bc5aae942456" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame Member=(Name=.ctor OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Drawing.dll&amp;quot; Namespace=System.Drawing Type=Bitmap)]))&quot;)" tag="DGQL" />
+              <reference Id="a7f91ead-b496-47f3-9d12-e9a04c3b3738" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/System.Drawing.dll&quot; Namespace=System.Drawing Type=Bitmap)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="69986e35-ad5a-4524-8586-78b14e3432df" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="821c2612-b7dd-4555-a7b9-ad7920c39247" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="a17e0c5d-d8da-43b3-ad33-3f7d5095db54" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b45d4431-118e-4ef9-a8bc-35ee04003585" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="76ded42a-d1ef-46df-83d5-2c07a0ff0ed1" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="91e3865f-f631-4d5a-9b78-5be6201524d6" name="Invoke" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="OnFrameReceived(this, new Frame(bmp))">
+            <referencesInternal>
+              <reference Id="adfbf76c-b329-4719-a7c4-b7942931cdd8" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=AgentSensorFaceLib)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Sensor)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FrameReceived ParentType=Sensor))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FrameReceived ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&amp;quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame)]))&quot;)" tag="DGQL" />
+              <reference Id="30008859-694f-409e-b344-83f527c02316" handle="(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=(Name=FrameReceived ParentType=Sensor) Member=(Name=Invoke OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///E:/Programowanie/C%2523/AgentSensorFace/AgentSensorFaceLib/bin/Debug/AgentSensorFaceLib.dll Namespace=AgentSensorFaceLib Type=Frame)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5c0b4c0d-c026-4a19-a541-aba7983518ef" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="f75fccc1-411b-4caf-b511-0517391edf82" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="492eec61-43ca-41d2-8df5-f18869276231" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1dd51244-5a49-4e97-8f49-7980ba39efc6" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="112b755c-2792-45c1-a7b4-a0454f742de8" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ed345737-905c-424e-87e8-61246529e5de" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="0f1d7e22-52dd-4ae5-b5bd-c643e942f76f" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="bd7ae1da-65ab-46f4-aebf-72a363680b3a" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="78a8560b-0045-4eaf-8fe8-2ec546f4c708" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5db4e407-5afb-45e0-91ed-79d547d4aabc" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="cc4ab5e7-35c8-4b1e-b554-64957f87f725" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="763f0d80-a95d-4bb7-aae1-7db430a1484d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d32b6246-3f25-418d-9013-aa20f8e906ba" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="0eee1698-41f4-4ebf-96db-659e123bec4d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9b3a02da-c3af-4b34-b9e4-2bef76e44638" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="48dec111-ed66-45b2-8aeb-5a3686a96490" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b3943b45-47de-4bf9-9d83-e1ef488e0b7d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="17ecb5a6-2df1-4feb-9e99-cfd005f945c6" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e6d0a857-87f8-40ec-9a0f-ac1b714061fc" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5007a1c9-8947-4754-af3a-5eab9033f61a" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="abe1cc52-a4d5-4dea-979c-f8efa4706b4f" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="a032d05c-4973-42a5-bab4-e2a92701de61" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="b6852c4c-5e00-4913-b299-595d54a670cb" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c592e596-3740-42d6-ac88-8dc44fea37dd" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8ba41bd3-d77d-4631-ad3e-4f5d0f96e618" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e4a7f1e5-7cd2-4916-b2b2-def7dbd5c731" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="acd7968d-e8fb-4c34-aca4-28807ea1ac1d" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="59e88eef-eb08-450e-80fd-4acc9a6f8768" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="86176f59-b942-4c64-8fb4-d949feb0692e" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="acc4da9b-34bc-41f3-85ed-d8ba74b807ad" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="54a8f4a3-5b40-4d69-8d16-c4ce45ef93bd" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>
