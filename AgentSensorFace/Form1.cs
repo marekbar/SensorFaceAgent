@@ -10,7 +10,7 @@ namespace AgentSensorFace
         private Sensor sensor = null;
         delegate void SetTextCallback(string text);
         delegate void SetImageCallback(Bitmap bmp);
-
+        Face actualFace;
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +23,11 @@ namespace AgentSensorFace
             sensor.OnFaceDetected += new Sensor.FaceDetected(FaceDetectSense);
             //sensor.OnSensorError += new Sensor.ErrorOccured(DisruptionSense);
             //sensor.OnEyesDetected += new Sensor.EyesDetected(EyeDetectSense);
-           // sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
+            //sensor.OnMotionDetected += new Sensor.MotionDetected(MotionSense);
             sensor.WakeUp();
+            Pozycja.Start();
+            Twarz.Start();
+            Orietacja.Start();
         }
 
         #region AGENT_SENSES
@@ -52,13 +55,17 @@ namespace AgentSensorFace
                 string TMP = faces[0].Direction == FaceDirection.Frontal ? "Przód" : (faces[0].Direction == FaceDirection.TurnedLeft ? "Lewo" : (faces[0].Direction == FaceDirection.TurnedRight ? "Prawo" : "Nie wiadomo"));
                 SetText("Wykryto: " + faces.Length.ToString() + " twarzy " + TMP, 2);
                 //how to use face image - this is real size, no scale needed
+                actualFace = faces[0];
                 foreach (var face in faces)
                 {
                     //face.Save(Environment.SpecialFolder.DesktopDirectory);
                 }
             }
             else
+            {
                 SetText("Brak twarzy", 2);
+                actualFace = null;
+            }
         }
 
         private void EyeDetectSense(object sender, Eye[] eyes)
@@ -148,6 +155,62 @@ namespace AgentSensorFace
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             sensor.GoSleep();
+            Pozycja.Stop();
+            Twarz.Stop();
+            Orietacja.Stop();
+        }
+
+        private void Pozycja_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (actualFace != null)
+                {
+                    tFaceX.Text = actualFace.PositionX.ToString();
+                    tFaceY.Text = actualFace.PositionY.ToString();
+                }
+                else
+                {
+                    tFaceX.Text = "Brak";
+                    tFaceY.Text = "Brak";
+                }
+                
+            }
+            catch (Exception exp) { }
+            
+        }
+
+        private void Twarz_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                pictureFace.Image = actualFace.FaceImage;
+            }
+            catch (Exception exp) { }
+        }
+
+        private void Orietacja_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                switch(actualFace.Direction)
+                {
+                    case FaceDirection.Frontal:
+                        pictureOrietacja.Image = Properties.Resources.front;
+                            break;
+                    case FaceDirection.TurnedLeft:
+                            pictureOrietacja.Image = Properties.Resources.left;
+                            break;
+                    case FaceDirection.TurnedRight:
+                            pictureOrietacja.Image = Properties.Resources.rigth;
+                            break;
+                    case FaceDirection.NoInfo:
+                            pictureOrietacja.Image = Properties.Resources.none;
+                            break;
+                }
+                 
+            }
+            catch (Exception exp) { }
         }
     }
 }
