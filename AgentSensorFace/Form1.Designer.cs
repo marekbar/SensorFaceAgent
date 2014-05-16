@@ -38,29 +38,29 @@
             this.status2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.status3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.display = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureFace = new System.Windows.Forms.PictureBox();
             this.gPozycja = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tFaceY = new System.Windows.Forms.TextBox();
             this.tFaceX = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureOrietacja = new System.Windows.Forms.PictureBox();
             this.Pozycja = new System.Windows.Forms.Timer(this.components);
             this.Twarz = new System.Windows.Forms.Timer(this.components);
-            this.display = new System.Windows.Forms.PictureBox();
-            this.pictureFace = new System.Windows.Forms.PictureBox();
-            this.pictureOrietacja = new System.Windows.Forms.PictureBox();
             this.Orietacja = new System.Windows.Forms.Timer(this.components);
             this.menu.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFace)).BeginInit();
             this.gPozycja.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureFace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrietacja)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +131,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(757, 456);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // display
+            // 
+            this.display.BackColor = System.Drawing.Color.LightGray;
+            this.display.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.display.Location = new System.Drawing.Point(3, 3);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(499, 450);
+            this.display.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.display.TabIndex = 0;
+            this.display.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -158,6 +169,17 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Twarz";
+            // 
+            // pictureFace
+            // 
+            this.pictureFace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureFace.ImageLocation = "";
+            this.pictureFace.Location = new System.Drawing.Point(3, 16);
+            this.pictureFace.Name = "pictureFace";
+            this.pictureFace.Size = new System.Drawing.Size(234, 159);
+            this.pictureFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureFace.TabIndex = 0;
+            this.pictureFace.TabStop = false;
             // 
             // gPozycja
             // 
@@ -216,37 +238,7 @@
             this.groupBox1.Size = new System.Drawing.Size(240, 179);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Oriętacja";
-            // 
-            // Pozycja
-            // 
-            this.Pozycja.Tick += new System.EventHandler(this.Pozycja_Tick);
-            // 
-            // Twarz
-            // 
-            this.Twarz.Tick += new System.EventHandler(this.Twarz_Tick);
-            // 
-            // display
-            // 
-            this.display.BackColor = System.Drawing.Color.LightGray;
-            this.display.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.display.Location = new System.Drawing.Point(3, 3);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(499, 450);
-            this.display.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.display.TabIndex = 0;
-            this.display.TabStop = false;
-            // 
-            // pictureFace
-            // 
-            this.pictureFace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureFace.ImageLocation = "";
-            this.pictureFace.Location = new System.Drawing.Point(3, 16);
-            this.pictureFace.Name = "pictureFace";
-            this.pictureFace.Size = new System.Drawing.Size(234, 159);
-            this.pictureFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureFace.TabIndex = 0;
-            this.pictureFace.TabStop = false;
+            this.groupBox1.Text = "Orientacja";
             // 
             // pictureOrietacja
             // 
@@ -258,6 +250,14 @@
             this.pictureOrietacja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureOrietacja.TabIndex = 0;
             this.pictureOrietacja.TabStop = false;
+            // 
+            // Pozycja
+            // 
+            this.Pozycja.Tick += new System.EventHandler(this.Pozycja_Tick);
+            // 
+            // Twarz
+            // 
+            this.Twarz.Tick += new System.EventHandler(this.Twarz_Tick);
             // 
             // Orietacja
             // 
@@ -282,13 +282,13 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.display)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureFace)).EndInit();
             this.gPozycja.ResumeLayout(false);
             this.gPozycja.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.display)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureFace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOrietacja)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
